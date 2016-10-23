@@ -1,0 +1,404 @@
+<Profile xmlns="http://tempuri.org/ProfileSchema.xsd">
+  <Name>[E][Metrienne] Lite Black Hole Weekly</Name>
+
+	<ForceAlignment Type="Dark" AutoSkip="True" /> <!-- Don't worry, there are no light/dark points offered in these quests -->
+	
+	<Vendors>
+		<Hotspot Name="Imperial Medical Droid" X="-30.4468" Y="-1.087555" Z="47.1491" /> <!-- Horizon Outpost Level 2 -->
+	</Vendors>
+
+	<GrindAreas>
+	
+	<GrindArea Name="Asset Liquidation">
+		<MinLevel>1</MinLevel>
+		<MaxLevel>100</MaxLevel>
+		<Mobs>
+			<Mob>Torvix Underboss</Mob>
+			<Mob>Torvix War Droid</Mob>
+		</Mobs>
+		<Hotspots>
+			<Hotspot Name="Torvix Underboss" X="-36.0683" Y="-0.1021729" Z="31.8138" />
+			<Hotspot Name="Torvix War Droid" X="-36.3093" Y="-0.1021724" Z="26.7435" />
+			<Hotspot Name="Torvix War Droid" X="-33.8466" Y="-0.107924" Z="21.0724" />
+			<Hotspot Name="Torvix War Droid" X="-35.1827" Y="-0.1030223" Z="10.0699" />
+			<Hotspot Name="Torvix War Droid" X="-27.252" Y="-0.1030225" Z="7.3836" />
+			<Hotspot Name="Torvix Underboss" X="-28.7055" Y="-0.1079243" Z="13.0729" />
+			<Hotspot Name="Torvix War Droid" X="-27.0916" Y="-0.1073032" Z="18.6952" />
+			<Hotspot Name="Torvix War Droid" X="-25.8341" Y="-0.1079243" Z="22.6228" />
+		</Hotspots>
+	</GrindArea>
+	
+	</GrindAreas>
+	
+	<Questing>
+	
+		<!--
+		
+		This profile prioritizes missions by the following: 
+		
+		1. No Trace Left
+		2. Asset Liquidation
+		3. Control the Battlefield
+		4. Glow (full version)
+		5. Hypermatter Directive
+		6. End of Torvix (full version)
+		7. Black Hole Crisis
+		
+		-->
+		
+		<!-- Pick up Asset Liquidation; Checks if player is below ground and does not have the mission -->
+		
+		<If Condition="((not HasQuest(0xE000964F15142AF9)) and (not IsQuestComplete(0xE000964F15142AF9)))">
+			<If Condition="(Me.Position.Y &lt; -1) and (Me.Position.Y &gt; -2.1)">
+				<UseTransport Type="Wonkavator" TransporterName="Horizon Outpost Elevator" Option="Horizon Outpost Level 1" 
+					X="-30.41997" Y="-1.08762" Z="41.96677"
+					ToX="-25.51715" ToY="-0.08380039" ToZ="39.41034" />
+				<WaitTimer QuestId="1" WaitTime="2" />
+			</If>
+			<MoveTo QuestId="0xE000964F15142AF9" X="-27.96474" Y="-0.08299847" Z="29.60314" />
+			<WaitTimer QuestId="1" WaitTime="2" />
+		</If>
+			
+		<!-- Pick up Black Hole Weekly; Checks if player is above ground and does not have the mission -->
+		
+		<If Condition="((not HasQuest(0xE000499515A96C81)) and (not IsQuestComplete(0xE000499515A96C81)))">
+			<If Condition="(Me.Position.Y &lt; 1) and (Me.Position.Y &gt; -1)">
+				<UseTransport Type="Wonkavator" TransporterName="Horizon Outpost Elevator" Option="Horizon Outpost Level 2" 
+					X="-25.51715" Y="-0.08380039" Z="39.41034"
+					ToX="-30.4292" ToY="-1.098998" ToZ="42.0808" />
+				<WaitTimer QuestId="1" WaitTime="2" />
+			</If>
+			<PickUpQuest QuestName="Black Hole Crisis" QuestId="0xE000499515A96C81" Type="Placeable" UseRange="2" Radius="5" GiverName="Black Hole Mission Terminal" X="-22.06116" Y="-1.897172" Z="44.7636" />
+		</If>
+		
+		<!-- Pick up Control the Battlefield; Checks if player is above ground and does not have the mission -->
+		
+		<If Condition="((not HasQuest(0xE000E9F809193A03)) and (not IsQuestComplete(0xE000E9F809193A03)))">
+			<If Condition="(Me.Position.Y &lt; 1) and (Me.Position.Y &gt; -1)">
+				<UseTransport Type="Wonkavator" TransporterName="Horizon Outpost Elevator" Option="Horizon Outpost Level 2" 
+					X="-25.51715" Y="-0.08380039" Z="39.41034"
+					ToX="-30.4292" ToY="-1.098998" ToZ="42.0808" />
+				<WaitTimer QuestId="1" WaitTime="2" />
+			</If>
+			<PickUpQuest QuestName="Control the Battlefield" QuestId="0xE000E9F809193A03" Type="Placeable" UseRange="2" Radius="5" GiverName="Black Hole Mission Terminal" X="-22.06116" Y="-1.897172" Z="44.7636" />
+		</If>
+
+		<!-- Pick up Hypermatter Directive; Checks if player is above ground and does not have the mission -->
+		
+		<If Condition="((not HasQuest(0xE0002D926943E4ED)) and (not IsQuestComplete(0xE0002D926943E4ED)))">
+			<If Condition="(Me.Position.Y &lt; 1) and (Me.Position.Y &gt; -1)">
+				<UseTransport Type="Wonkavator" TransporterName="Horizon Outpost Elevator" Option="Horizon Outpost Level 2" 
+					X="-25.51715" Y="-0.08380039" Z="39.41034"
+					ToX="-30.4292" ToY="-1.098998" ToZ="42.0808" />
+				<WaitTimer QuestId="1" WaitTime="2" />
+			</If>
+			<PickUpQuest QuestName="Hypermatter Directive" QuestId="0xE0002D926943E4ED" Type="Placeable" UseRange="2" Radius="5" GiverName="Black Hole Mission Terminal" X="-22.06116" Y="-1.897172" Z="44.7636" />
+		</If>
+		
+		<!-- Pick up No Trace Left; Checks if player is above ground and does not have the mission -->
+
+		
+		<If Condition="((not HasQuest(0xE0007CEC19F3A0E1)) and (not IsQuestComplete(0xE0007CEC19F3A0E1)))">
+			<If Condition="(Me.Position.Y &lt; 1) and (Me.Position.Y &gt; -1)">
+				<UseTransport Type="Wonkavator" TransporterName="Horizon Outpost Elevator" Option="Horizon Outpost Level 2" 
+					X="-25.51715" Y="-0.08380039" Z="39.41034"
+					ToX="-30.4292" ToY="-1.098998" ToZ="42.0808" />
+				<WaitTimer QuestId="1" WaitTime="2" />
+			</If>
+			<PickUpQuest QuestName="No Trace Left" QuestId="0xE0007CEC19F3A0E1" Type="Placeable" UseRange="2" Radius="5" GiverName="Black Hole Mission Terminal" X="-22.06116" Y="-1.897172" Z="44.7636" />
+		</If>
+		
+		<!-- Glow is not picked up in the Lite version
+		
+		<If Condition="((not HasQuest(0xE000A7BF7FECDFDC)) and (not IsQuestComplete(0xE000A7BF7FECDFDC)))">
+			<If Condition="(Me.Position.Y &lt; 1) and (Me.Position.Y &gt; -1)">
+				<UseTransport Type="Wonkavator" TransporterName="Horizon Outpost Elevator" Option="Horizon Outpost Level 2" 
+					X="-25.51715" Y="-0.08380039" Z="39.41034"
+					ToX="-30.4292" ToY="-1.098998" ToZ="42.0808" />
+				<WaitTimer QuestId="1" WaitTime="2" />
+			</If>
+			<PickUpQuest QuestName="Glow" QuestId="0xE000A7BF7FECDFDC" Type="Placeable" UseRange="2" Radius="5" GiverName="Black Hole Mission Terminal" X="-22.06116" Y="-1.897172" Z="44.7636" />
+		</If>
+		
+		-->
+		
+		<!-- The End of Torvix is not picked up in the Lite version
+		
+		<If Condition="((not HasQuest(0xE000D9F1A734F486)) and (not IsQuestComplete(0xE000D9F1A734F486)))">
+			<If Condition="(Me.Position.Y &lt; 1) and (Me.Position.Y &gt; -1)">
+				<UseTransport Type="Wonkavator" TransporterName="Horizon Outpost Elevator" Option="Horizon Outpost Level 2" 
+					X="-25.51715" Y="-0.08380039" Z="39.41034"
+					ToX="-30.4292" ToY="-1.098998" ToZ="42.0808" />
+				<WaitTimer QuestId="1" WaitTime="2" />
+			</If>
+			<PickUpQuest QuestName="The End of Torvix" QuestId="0xE000D9F1A734F486" GiverName="General Konya" X="-25.46" Y="-2.088999" Z="43.4446" />
+			<WaitTimer QuestId="1" WaitTime="4" />
+		</If>
+		
+		-->
+
+		<!-- Conduct and turn in mission No Trace Left; checks if player as at ground level -->
+		
+		<If Condition="((HasQuest(0xE0007CEC19F3A0E1)) and (not IsQuestComplete(0xE0007CEC19F3A0E1)))">
+			<If Condition="(Me.Position.Y &lt; 1) and (Me.Position.Y &gt; -1)">
+				<UseTransport Type="Wonkavator" TransporterName="Horizon Outpost Elevator" Option="Horizon Outpost Level 2" 
+					X="-25.51715" Y="-0.08380039" Z="39.41034"
+					ToX="-30.4292" ToY="-1.098998" ToZ="42.0808" />
+				<WaitTimer QuestId="1" WaitTime="2" />
+			</If>
+			<While Condition="((not IsStepComplete(0xE0007CEC19F3A0E1, 2)))">
+				<UseItem QuestId="0xE0007CEC19F3A0E1" Item="Radiation Sensor" WaitTime="1" Range="1" InCombat="False" Radius="1" >
+					<Npcs>
+						<Npc>Imperial Soldier</Npc>
+						<Npc>Imperial Engineer</Npc>
+						<Npc>Imperial Officer</Npc>
+					</Npcs>
+				<Hotspots>
+					<Hotspot Name="Imperial Soldier" X="-27.3145" Y="-2.098999" Z="42.5848" />
+					<Hotspot Name="Imperial Soldier" X="-30.0185" Y="-1.098998" Z="41.8667" />
+					<Hotspot Name="Imperial Soldier" X="-28.9835" Y="-1.098999" Z="46.1259" />
+					<Hotspot Name="Imperial Soldier" X="-26.2134" Y="-2.098999" Z="48.9706" />
+					<Hotspot Name="Imperial Soldier" X="-25.1755" Y="-2.088999" Z="43.2986" />
+					<Hotspot Name="Imperial Soldier" X="-22.7213" Y="-2.098999" Z="48.1861" />
+					<Hotspot Name="Imperial Soldier" X="-26.1286" Y="-2.088344" Z="51.2174" />
+					<Hotspot Name="Imperial Soldier" X="-24.5475" Y="-2.098999" Z="52.7021" />
+					<Hotspot Name="Imperial Soldier" X="-22.8501" Y="-2.098999" Z="52.6923" />
+					<Hotspot Name="Imperial Soldier" X="-21.9979" Y="-2.098999" Z="51.8806" />
+				</Hotspots>
+				</UseItem>
+			</While>
+			<If Condition="((HasQuest(0xE0007CEC19F3A0E1)) and (not IsStepComplete(0xE0007CEC19F3A0E1, 3)))">
+				<MoveTo QuestId="0xE0007CEC19F3A0E1" X="-22.06116" Y="-1.897172" Z="44.7636" />
+				<UseObject QuestId="0xE0007CEC19F3A0E1" Name="Black Hole Mission Terminal" BranchId="1" StepId="3" WaitTime="4" UseRange="4" IgnoreLOS="True" X="-22.06116" Y="-1.897172" Z="44.7636" />
+				<CompleteQuest QuestName="No Trace Left" QuestId="0xE0007CEC19F3A0E1" RewardIndex="1" />
+				<UseTransport Type="Wonkavator" TransporterName="Horizon Outpost Elevator" Option="Horizon Outpost Level 1" 
+					X="-30.41997" Y="-1.08762" Z="41.96677"
+					ToX="-25.51715" ToY="-0.08380039" ToZ="39.41034" />
+			<WaitTimer QuestId="1" WaitTime="2" />
+			</If>
+		</If>
+	
+		<!-- Conduct mission Asset Liquidation; assumes player is on ground level -->
+		
+		<If Condition="((HasQuest(0xE000964F15142AF9)) and (not IsQuestComplete(0xE000964F15142AF9)))">
+			<If Condition="((not IsStepComplete(0xE000964F15142AF9, 3)))">
+				<Grind GrindRef="Asset Liquidation" While="((not IsStepComplete(0xE000964F15142AF9, 3)))" />
+			</If>
+			<If Condition="((not IsStepComplete(0xE000964F15142AF9, 5)))">
+				<UseObject QuestId="0xE000964F15142AF9" BranchId="1" StepId="5" Radius="50" WaitTime="5" >
+					<Placeables>
+						<Placeable>Torvix Munition Cache</Placeable>
+					</Placeables>
+					<Hotspots>
+						<Hotspot Name="My Location" X="-26.83157" Y="-0.1030225" Z="4.794641" />
+						<Hotspot Name="My Location" X="-28.13037" Y="-0.1079243" Z="12.89697" />
+						<Hotspot Name="My Location" X="-36.23258" Y="-0.1030226" Z="10.06308" />
+						<Hotspot Name="My Location" X="-36.54214" Y="-0.08320592" Z="17.3151" />
+						<Hotspot Name="My Location" X="-36.54077" Y="-0.1021729" Z="26.14552" />
+						<Hotspot Name="My Location" X="-36.01934" Y="-0.1021727" Z="32.34356" />
+						<Hotspot Name="My Location" X="-25.38059" Y="-0.104126" Z="24.11143" />	
+					</Hotspots>
+				</UseObject>
+			</If>
+			<If Condition="((not IsStepComplete (0xE000964F15142AF9, 7)))">
+				<MoveTo QuestId="0xE000964F15142AF9" X="8.475206" Y="-0.1063374" Z="33.13916" />
+				<UseObject Name="Communications Tower" QuestId="0xE000964F15142AF9" BranchId="1" StepId="7" WaitTime="1" X="8.475206" Y="-0.1063374" Z="33.13916" />
+				<MoveTo QuestId="0xE000964F15142AF9" X="6.996899" Y="-0.1066811" Z="33.28817" />
+			</If>
+		</If>
+		
+		<!-- Conduct mission Control the Battlefield; should have been done while doing Asset Liquidation but this is a precaution -->
+
+		<If Condition="((HasQuest(0xE000964F15142AF9)) and (not IsQuestComplete(0xE000964F15142AF9)))">
+			<If Condition="((not IsStepComplete(0xE000E9F809193A03, 2)))">
+				<Grind GrindRef="Asset Liquidation" While="((not IsStepComplete(0xE000E9F809193A03, 2)))" />
+			</If>
+		</If>
+		
+		<!-- Glow is not conducted in the Lite version
+		
+		<If Condition="((HasQuest(0xE000A7BF7FECDFDC)) and (not IsQuestComplete(0xE000A7BF7FECDFDC)))">
+			<If Condition="((not IsStepComplete(0xE000A7BF7FECDFDC, 2)))">
+				<MoveTo QuestId="0xE000A7BF7FECDFDC" X="0.7263" Y="-0.0938" Z="35.8819" />
+				<UseTransport Type="Wonkavator" TransporterName="HyperMatter Pipleline Control Station" Option="Pipeline Control Station Level 2" 
+					X="0.7263" Y="-0.0938" Z="35.8819"
+					ToX="-6.4" ToY="-8.398999" ToZ="38.6019" />
+				<WaitTimer QuestId="1" WaitTime="2" />				
+			</If>
+			<If Condition="((not IsStepComplete(0xE000A7BF7FECDFDC, 3)))">
+				<MoveTo QuestId="0xE000A7BF7FECDFDC" X="-5.2668" Y="-8.398999" Z="43.1299" />
+			</If>
+			<If Condition="((not IsStepComplete(0xE000A7BF7FECDFDC, 4)))">
+				<MoveTo QuestId="0xE000A7BF7FECDFDC" X="-4.656182" Y="-8.398999" Z="42.55223" />
+				
+				<UserDialog Title="Note From Metrienne" Message="Due to the highly volatile Hypermatter floor, you will have to manually complete this step. Use an Anti-Rad Injector, Reroute 4/4 Hypermatter Pipelines, then return to the west side of the room before pressing OK." />				
+			
+				<If Condition="(Me.Position.Y &lt; -8) and (Me.Position.Y &gt; -9.5)">
+					<UseTransport Type="Wonkavator" TransporterName="HyperMatter Pipleline Control Station" Option="Pipeline Control Station Level 1" 
+						X="-6.305482" Y="-8.358999" Z="38.44543"
+						ToX="0.7263" ToY="-0.0938" ToZ="35.8819" />
+					<WaitTimer QuestId="1" WaitTime="2" />		
+				</If>
+				
+			</If>
+		</If>
+		
+		-->
+
+		<!-- Conduct mission Hypermatter Directive; assumes player is at ground level -->
+		
+		<If Condition="((HasQuest(0xE0002D926943E4ED)) and (not IsQuestComplete(0xE0002D926943E4ED)))">
+			<If Condition="((not IsStepComplete(0xE0002D926943E4ED, 2)))">
+				<MoveTo QuestId="0xE0002D926943E4ED" X="17.1443" Y="-0.599" Z="4.002" />
+				<UseTransport Type="Wonkavator" TransporterName="HyperMatter Storage Facility" Option="Storage Facility Level 2" 
+					X="17.1443" Y="-0.599" Z="4.002"
+					ToX="19.0484" ToY="-9.799" ToZ="10.4176" />
+				<WaitTimer QuestId="1" WaitTime="2" />					
+			</If>
+			<If Condition="((not IsStepComplete(0xE0002D926943E4ED, 3)))">
+				<UseObject QuestId="0xE0002D926943E4ED" BranchId="1" StepId="3" Radius="50" WaitTime="5" BlacklistDuration="30" >
+					<Placeables>
+						<Placeable>HyperMatter Supplies</Placeable>
+					</Placeables>
+					<Hotspots>
+						<Hotspot Name="My Location" X="25.16291" Y="-10.799" Z="6.249619" />
+						<Hotspot Name="My Location" X="22.47997" Y="-10.798" Z="4.387604" />
+						<Hotspot Name="My Location" X="23.0638" Y="-10.799" Z="0.4218322" />
+						<Hotspot Name="My Location" X="19.39143" Y="-10.799" Z="0.3545962" />
+						<Hotspot Name="My Location" X="16.88806" Y="-10.799" Z="3.52671" />
+					</Hotspots>
+				</UseObject>
+				<If Condition="(Me.Position.Y &lt; -9.9) and (Me.Position.Y &gt; -10.9)">
+				<UseTransport Type="Wonkavator" TransporterName="HyperMatter Storage Facility" Option="Storage Facility Level 1"
+					X="18.92802" Y="-9.782459" Z="10.20271"
+					ToX="17.1443" ToY="-0.599" ToZ="4.002" />
+				<WaitTimer QuestId="1" WaitTime="2" />		
+				</If>
+			</If>
+		</If>
+		
+		<!-- The End of Torvix is not conducted in the Lite version
+		
+		<If Condition="((HasQuest(0xE000D9F1A734F486)) and (not IsQuestComplete(0xE000D9F1A734F486)))">
+			<If Condition="((not IsStepComplete(0xE000D9F1A734F486, 2)))">
+				<MoveTo QuestId="0xE000D9F1A734F486" X="-16.29564" Y="-0.07899999" Z="10.37824" />
+			</If>
+			<If Condition="((not IsStepComplete(0xE000D9F1A734F486, 3)))">
+				<MoveTo QuestId="0xE000D9F1A734F486" X="-21.4107" Y="-0.09938359" Z="10.4033" />
+				<UseTransport Type="Wonkavator" TransporterName="HyperMatter Tower Administration Offices" Option="Administrative Offices"
+					X="-21.4107" Y="-0.09938359" Z="10.4033"
+					ToX="-21.3" ToY="-12.699" ToZ="14.75" />
+				<WaitTimer QuestId="1" WaitTime="2" />		
+			</If>
+			<If Condition="((not IsStepComplete(0xE000D9F1A734F486, 4)))">
+				<MoveTo QuestId="0xE000D9F1A734F486" X="-8.811767" Y="-11.699" Z="25.20181" />
+			</If>
+			<If Condition="((not IsStepComplete(0xE000D9F1A734F486, 5)))">
+				<MoveTo QuestId="0xE000D9F1A734F486" X="-5.636993" Y="-11.699" Z="15.52433" />
+				<UseTransport Type="Wonkavator" TransporterName="HyperMatter Refinery Core" Option="Refinery Core"
+					X="-5.636993" Y="-11.699" Z="15.52433"
+					ToX="-22.2401" ToY="-9.398999" ToZ="8.8016" />
+				<WaitTimer QuestId="1" WaitTime="2" />		
+			</If>
+			<If Condition="((not IsStepComplete(0xE000D9F1A734F486, 6)))">
+				<MoveTo QuestId="0xE000D9F1A734F486" X="-27.06435" Y="-9.378999" Z="13.01595" />
+				<UseObject Name="Security Door Control Panel" QuestId="0xE000D9F1A734F486" BranchId="1" StepId="6" WaitTime="3" X="-27.06435" Y="-9.378999" Z="13.01595" />
+			</If>
+			<If Condition="((not IsStepComplete(0xE000D9F1A734F486, 7)))">
+				<MoveTo QuestId="0xE000D9F1A734F486" X="-27.13792" Y="-9.378999" Z="20.19266" />
+				<UseObject Name="Security Door Control Panel" QuestId="0xE000D9F1A734F486" BranchId="1" StepId="7" WaitTime="3" X="-27.13792" Y="-9.378999" Z="20.19266" />
+			</If>
+			<If Condition="((not IsStepComplete(0xE000D9F1A734F486, 8)))">
+				<MoveTo QuestId="0xE000D9F1A734F486" X="-37.88272" Y="-11.38085" Z="27.75333" />
+				<Interact Name="Master Safety Control" QuestId="0xE000D9F1A734F486" IgnoreLOS="True" WaitTime="3" UseRange="0.1" Radius="0.1" X="-37.88272" Y="-11.38085" Z="27.75333" />				
+				<MoveTo QuestId="0xE000D9F1A734F486" X="-36.1101" Y="-11.38251" Z="28.3121" />
+			</If>
+			<If Condition="((not IsStepComplete(0xE000D9F1A734F486, 9)))">
+			
+			<UserDialog Title="Note From Metrienne" Message="Click the left console once, the middle console three times, and the right console twice. Press OK once you have reached the next step." />				
+
+			</If>
+			<If Condition="((not IsStepComplete(0xE000D9F1A734F486, 10)))">
+				<MoveTo QuestId="0xE000D9F1A734F486" X="-39.12473" Y="-11.38099" Z="28.64898" />
+				<UseObject Name="Vent Hypermatter" QuestId="0xE000D9F1A734F486" BranchId="1" StepId="10" WaitTime="3" X="-39.12473" Y="-11.38099" Z="28.64898" />
+			</If>
+			<If Condition="((not IsStepComplete(0xE000D9F1A734F486, 11)))">
+				<If Condition="(Me.Position.Y &lt; -11) and (Me.Position.Y &gt; -12)">
+					<MoveTo QuestId="0xE000D9F1A734F486" IgnoreLOS="True" X="-38.2452" Y="-11.39533" Z="32.86944" />
+					<UserDialog Title="Note From Metrienne" Message="Jump off and restart at Horizon Outpost Level 2, then press OK." />				
+				</If>
+			</If>			
+		</If>
+		
+		-->
+		
+		<!-- Turn in weekly and all other quests; checks if you are above ground level -->
+		
+		<If Condition="(Me.Position.Y &lt; 1) and (Me.Position.Y &gt; -1)">
+			<UseTransport Type="Wonkavator" TransporterName="Horizon Outpost Elevator" Option="Horizon Outpost Level 2" 
+				X="-25.51715" Y="-0.08380039" Z="39.41034"
+				ToX="-30.4292" ToY="-1.098998" ToZ="42.0808" />
+				<WaitTimer QuestId="1" WaitTime="2" />
+		</If>
+		
+		<If Condition="((HasQuest(0xE000D9F1A734F486)) and (not IsStepComplete(0xE000D9F1A734F486, 11)))"> <!-- The End of Torvix -->
+			<TalkTo QuestName="The End of Torvix" QuestId="0xE000D9F1A734F486" Name="General Konya" X="-25.46" Y="-2.088999" Z="43.4446" />
+			<WaitTimer QuestId="1" WaitTime="4" />
+			<CompleteQuest QuestName="The End of Torvix" QuestId="0xE000D9F1A734F486" RewardIndex="1" />
+		</If>
+
+		<If Condition="((HasQuest(0xE000964F15142AF9)) and (not IsStepComplete(0xE000964F15142AF9, 9)))"> <!-- Asset Liquidation -->
+			<MoveTo QuestId="0xE000964F15142AF9" X="-22.06116" Y="-1.897172" Z="44.7636" />
+			<UseObject QuestId="0xE000964F15142AF9" Name="Black Hole Mission Terminal" BranchId="1" StepId="9" WaitTime="4" UseRange="4" IgnoreLOS="True" X="-22.06116" Y="-1.897172" Z="44.7636" />
+			<WaitTimer QuestId="1" WaitTime="2" />
+		</If>
+		
+		<If Condition="((IsQuestComplete(0xE000964F15142AF9)))">
+			<CompleteQuest QuestName="Asset Liquidation" QuestId="0xE000964F15142AF9" RewardIndex="1" />
+		</If>
+		
+		<If Condition="((HasQuest(0xE000E9F809193A03)) and (not IsStepComplete(0xE000E9F809193A03, 3)))"> <!-- Control the Battlefield -->
+			<MoveTo QuestId="0xE000E9F809193A03" X="-22.06116" Y="-1.897172" Z="44.7636" />
+			<UseObject QuestId="0xE000E9F809193A03" Name="Black Hole Mission Terminal" BranchId="1" StepId="3" WaitTime="4" UseRange="4" IgnoreLOS="True" X="-22.06116" Y="-1.897172" Z="44.7636" />
+			<WaitTimer QuestId="1" WaitTime="2" />
+		</If>
+
+		<If Condition="((IsQuestComplete(0xE000E9F809193A03)))">
+			<CompleteQuest QuestName="Control the Battlefield" QuestId="0xE000E9F809193A03" RewardIndex="1" />
+		</If>
+		
+		<If Condition="((HasQuest(0xE000A7BF7FECDFDC)) and (not IsStepComplete(0xE000A7BF7FECDFDC, 5)))"> <!-- Glow -->
+			<MoveTo QuestId="0xE000A7BF7FECDFDC" X="-22.06116" Y="-1.897172" Z="44.7636" />
+			<UseObject QuestId="0xE000A7BF7FECDFDC" Name="Black Hole Mission Terminal" BranchId="1" StepId="5" WaitTime="4" UseRange="4" IgnoreLOS="True" X="-22.06116" Y="-1.897172" Z="44.7636" />
+			<WaitTimer QuestId="1" WaitTime="2" />
+		</If>
+
+		<If Condition="((IsQuestComplete(0xE000A7BF7FECDFDC)))">
+			<CompleteQuest QuestName="Glow" QuestId="0xE000A7BF7FECDFDC" RewardIndex="1" />
+		</If>
+		
+		<If Condition="((HasQuest(0xE0002D926943E4ED)) and (not IsStepComplete(0xE0002D926943E4ED, 4)))"> <!-- Hypermatter Directive -->
+			<MoveTo QuestId="0xE0002D926943E4ED" X="-22.06116" Y="-1.897172" Z="44.7636" />
+			<UseObject QuestId="0xE0002D926943E4ED" Name="Black Hole Mission Terminal" BranchId="1" StepId="4" WaitTime="4" UseRange="4" IgnoreLOS="True" X="-22.06116" Y="-1.897172" Z="44.7636" />
+			<WaitTimer QuestId="1" WaitTime="2" />
+		</If>
+
+		<If Condition="((IsQuestComplete(0xE0002D926943E4ED)))">
+			<CompleteQuest QuestName="Hypermatter Directive" QuestId="0xE0002D926943E4ED" RewardIndex="1" />
+		</If>
+		
+		<If Condition="((HasQuest(0xE000499515A96C81)) and (IsStepComplete(0xE000499515A96C81, 2)) and (not IsStepComplete(0xE000499515A96C81, 3)))"> <!-- Black Hole Crisis (Weekly) -->
+			<MoveTo QuestId="0xE000499515A96C81" X="-22.06116" Y="-1.897172" Z="44.7636" />
+			<UseObject QuestId="0xE000499515A96C81" Name="Black Hole Mission Terminal" BranchId="1" StepId="3" WaitTime="4" UseRange="4" IgnoreLOS="True" X="-22.06116" Y="-1.897172" Z="44.7636" />
+			<WaitTimer QuestId="1" WaitTime="2" />
+		</If>
+		
+		<If Condition="((IsQuestComplete(0xE000499515A96C81)))">
+			<CompleteQuest QuestName="Black Hole Crisis" QuestId="0xE000499515A96C81" RewardIndex="1" />
+		</If>
+
+		<UserDialog Title="Note From Metrienne" Message="End of profile. Report any feedback to http://www.thebuddyforum.com/buddy-wing-forum/buddy-wing-profiles/127471-e-black-hole-weekly.html" />					
+
+	</Questing>  
+
+</Profile>

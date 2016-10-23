@@ -1,0 +1,560 @@
+<Profile xmlns="http://tempuri.org/ProfileSchema.xsd">
+  <Name>R + E - Yavin 4 [Silentfu72]</Name>
+  
+	<ForceAlignment Type="Light" AutoSkip="true" />
+	
+	<!--<Vendors>
+		
+	</Vendors>-->
+<!--	
+	<Mailboxes>
+		
+	</Mailboxes>
+	
+	<Trainers>
+		
+	</Trainers>
+-->	
+	<!--
+	<Taxis>
+		
+	</Taxis>
+	
+	<BindPoints>
+		
+	</BindPoints> 
+	
+	<AvoidMobs>
+		
+	</AvoidMobs> -->
+
+	
+	<GrindAreas> 
+
+		<GrindArea Name="Massassi Retaliation (Bonus)">
+			<MinLevel>1</MinLevel>
+			<MaxLevel>100</MaxLevel>
+			<Mobs>
+				<Mob>Massassi Mauler</Mob>
+				<Mob>Massassi Blood Warrior</Mob>
+				<Mob>Massassi Imp</Mob>
+			</Mobs>
+			<Hotspots>
+				<Hotspot Name="My Location" X="184.9591" Y="11.89403" Z="64.61042" />
+				<Hotspot Name="My Location" X="187.2794" Y="11.91338" Z="62.99447" />
+				<Hotspot Name="My Location" X="187.096" Y="12.23529" Z="58.42238" />
+				<Hotspot Name="My Location" X="185.5746" Y="12.21875" Z="55.224" />
+				<Hotspot Name="My Location" X="180.5598" Y="12.5272" Z="55.46642" />
+				<Hotspot Name="My Location" X="179.8751" Y="12.55471" Z="58.83692" />
+			</Hotspots>
+		</GrindArea>
+		
+		<GrindArea Name="[DAILY] Pathfinding">
+			<MinLevel>1</MinLevel>
+			<MaxLevel>100</MaxLevel>
+			<Mobs>
+				<Mob>Stoneray</Mob>
+				<Mob>Small Stoneray</Mob>
+			</Mobs>
+			<Hotspots>
+				<Hotspot Name="Small Stoneray" X="175.4241" Y="14.02319" Z="42.05636" />
+				<Hotspot Name="Small Stoneray" X="172.8865" Y="14.23725" Z="57.35609" />
+				<Hotspot Name="Stoneray" X="168.4624" Y="14.89565" Z="62.3471" />
+				<Hotspot Name="Stoneray" X="173.0793" Y="14.10491" Z="72.37703" />
+				<Hotspot Name="Stoneray" X="181.4669" Y="12.37086" Z="69.52751" />
+				<Hotspot Name="Small Stoneray" X="182.8109" Y="12.29259" Z="73.66692" />
+				<Hotspot Name="Small Stoneray" X="192.9318" Y="13.8084" Z="35.94191" />
+				<Hotspot Name="Massassi Roamer" X="194.7872" Y="12.12729" Z="84.73523" />
+			</Hotspots>
+		</GrindArea>
+		
+		<GrindArea Name="[DAILY] Pushback">
+			<MinLevel>1</MinLevel>
+			<MaxLevel>100</MaxLevel>
+			<Mobs>
+				<Mob>Lurker</Mob>
+			</Mobs>
+			<Hotspots>
+				<Hotspot Name="Lurker" X="249.6712" Y="13.45832" Z="47.61463" />
+				<Hotspot Name="Lurker" X="246.413" Y="13.26393" Z="40.20482" />
+				<Hotspot Name="Lurker" X="238.8613" Y="13.09722" Z="42.13018" />
+				<Hotspot Name="Lurker" X="247.5987" Y="13.00954" Z="65.59135" />
+				<Hotspot Name="Lurker" X="246.7211" Y="13.11176" Z="84.12122" />
+				<Hotspot Name="Lurker" X="249.8975" Y="12.24752" Z="91.0903" />
+			</Hotspots>
+		</GrindArea>
+		
+		<GrindArea Name="Elder Lurker">
+			<MinLevel>1</MinLevel>
+			<MaxLevel>100</MaxLevel>
+			<Mobs>
+				<Mob>Elder Lurker</Mob>
+			</Mobs>
+			<Hotspots>
+				<Hotspot Name="Elder Lurker" X="270.332" Y="12.6573" Z="59.07431" />
+			</Hotspots>
+		</GrindArea>
+		
+		<GrindArea Name="[DAILY] Training Regimen">
+			<MinLevel>1</MinLevel>
+			<MaxLevel>100</MaxLevel>
+			<Mobs>
+				<Mob>Basic Training Droid</Mob>
+				<Mob>Intermediate Training Droid</Mob>
+				<Mob>Advanced Training Droid</Mob>
+			</Mobs>
+			<Hotspots>
+				<Hotspot Name="Basic Training Droid" X="217.6353" Y="13.56316" Z="55.30896" />
+				<Hotspot Name="Intermediate Training Droid" X="219.2231" Y="13.48951" Z="55.59548" />
+				<Hotspot Name="Advanced Training Droid" X="217.4959" Y="13.55535" Z="56.18925" />
+			</Hotspots>
+		</GrindArea>
+		
+		<GrindArea Name="Stoneray Matriarch">
+			<MinLevel>1</MinLevel>
+			<MaxLevel>100</MaxLevel>
+			<Mobs>
+				<Mob>Stoneray Matriarch</Mob>
+			</Mobs>
+			<Hotspots>
+				<Hotspot Name="Stoneray Matriarch" X="180.1498" Y="14.23007" Z="67.0451" />	
+			</Hotspots>
+		</GrindArea>
+		
+		<GrindArea Name="Pathfinder's Duty (Bonus)">
+			<MinLevel>1</MinLevel>
+			<MaxLevel>100</MaxLevel>
+			<Mobs>
+				<Mob>Stoneray</Mob>
+				<Mob>Small Stoneray</Mob>
+			</Mobs>
+			<Hotspots>
+				<Hotspot Name="Massassi Roamer" X="172.9963" Y="14.20145" Z="51.54237" />
+				<Hotspot Name="Krakjya" X="192.6374" Y="13.30162" Z="40.34795" />
+				<Hotspot Name="Krakjya" X="189.3668" Y="13.51868" Z="37.39822" />
+				<Hotspot Name="Massassi Roamer" X="194.7872" Y="12.12729" Z="84.73523" />
+			</Hotspots>
+		</GrindArea>
+		
+		<GrindArea Name="Massassi Assault (Bonus)">
+			<MinLevel>1</MinLevel>
+			<MaxLevel>100</MaxLevel>
+			<Mobs>
+				<Mob>Massassi Conqueror</Mob>
+				<Mob>Massassi Crusher</Mob>
+			</Mobs>
+			<Hotspots>
+				<Hotspot Name="Massassi Conqueror" X="152.0415" Y="15.14621" Z="48.00732" />
+				<Hotspot Name="Massassi Conqueror" X="152.3378" Y="15.14646" Z="48.00259" />
+				<Hotspot Name="Massassi Conqueror" X="159.2257" Y="15.58633" Z="45.13857" />
+				<Hotspot Name="Massassi Conqueror" X="162.072" Y="15.7433" Z="45.95291" />
+				<Hotspot Name="Massassi Conqueror" X="150.6437" Y="15.32395" Z="62.26689" />
+				<Hotspot Name="Massassi Crusher" X="148.0096" Y="15.14791" Z="64.71111" />
+				<Hotspot Name="Massassi Conqueror" X="150.0829" Y="15.74019" Z="68.2232" />
+				<Hotspot Name="Massassi Conqueror" X="152.4049" Y="15.73881" Z="71.16925" />
+			</Hotspots>
+		</GrindArea>
+		
+		<GrindArea Name="Revanite Overseer">
+			<MinLevel>1</MinLevel>
+			<MaxLevel>100</MaxLevel>
+			<Mobs>
+				<Mob>Revanite Overseer</Mob>
+			</Mobs>
+			<Hotspots>
+				<Hotspot Name="Revanite Overseer" X="225.2579" Y="14.23665" Z="76.99112" />
+				<Hotspot Name="Revanite Overseer" X="218.1532" Y="13.4945" Z="79.14368" />
+				<Hotspot Name="Revanite Overseer" X="214.1477" Y="13.9441" Z="65.5862" />
+				<Hotspot Name="Revanite Overseer" X="221.7229" Y="14.23561" Z="62.1174" />
+				<Hotspot Name="Revanite Overseer" X="214.1796" Y="13.79811" Z="56.4198" />
+				<Hotspot Name="Revanite Overseer" X="227.9071" Y="14.32859" Z="55.976" />
+				<Hotspot Name="Revanite Overseer" X="237.6817" Y="13.64177" Z="60.3103" />			
+			</Hotspots>
+		</GrindArea>
+		
+		<GrindArea Name="Revanite Loyalist">
+			<MinLevel>1</MinLevel>
+			<MaxLevel>100</MaxLevel>
+			<Mobs>
+				<Mob>Revanite Loyalist</Mob>
+			</Mobs>
+			<Hotspots>
+				<Hotspot Name="Revanite Loyalist" X="235.7854" Y="14.23735" Z="72.34921" />	
+				<Hotspot Name="Revanite Loyalist" X="238.7957" Y="13.64154" Z="77.90688" />
+				<Hotspot Name="Revanite Loyalist" X="242.7135" Y="13.67091" Z="82.2045" />
+				<Hotspot Name="Revanite Loyalist" X="230.3604" Y="13.94172" Z="80.78571" />
+				<Hotspot Name="Revanite Loyalist" X="230.4845" Y="14.23665" Z="77.3268" />
+				<Hotspot Name="Revanite Loyalist" X="215.9153" Y="13.64731" Z="81.9971" />
+				<Hotspot Name="Revanite Loyalist" X="215.495" Y="13.64716" Z="72.7285" />
+				<Hotspot Name="Revanite Loyalist" X="222.9995" Y="13.79491" Z="47.9221" />
+			</Hotspots>
+		</GrindArea>
+		
+		<GrindArea Name="Revanite Followers">
+			<MinLevel>1</MinLevel>
+			<MaxLevel>100</MaxLevel>
+			<Mobs>
+				<Mob>Revanite Partisan</Mob>
+				<Mob>Revanite Follower</Mob>
+			</Mobs>
+			<Hotspots>
+				<Hotspot Name="Revanite Partisan" X="211.0831" Y="13.64879" Z="59.42764" />
+				<Hotspot Name="Revanite Follower" X="212.9739" Y="13.64459" Z="77.01692" />
+				<Hotspot Name="Revanite Follower" X="218.45" Y="13.59871" Z="57.2163" />
+				<Hotspot Name="Revanite Partisan" X="220.9247" Y="13.66479" Z="51.1267" />
+			</Hotspots>
+		</GrindArea>
+		
+		<GrindArea Name="Commandant Iven">
+			<MinLevel>1</MinLevel>
+			<MaxLevel>100</MaxLevel>
+			<Mobs>
+				<Mob>Commandant Iven</Mob>
+			</Mobs>
+			<Hotspots>
+				<Hotspot Name="Commandant Iven" X="228.4732" Y="14.86376" Z="67.6489" />
+			</Hotspots>
+		</GrindArea>
+		
+		<GrindArea Name="Savage Jungle (Bonus)">
+			<MinLevel>1</MinLevel>
+			<MaxLevel>100</MaxLevel>
+			<Mobs>
+				<Mob>Forest Stoneray</Mob>
+				<Mob>Forest Krakjya</Mob>
+			</Mobs>
+			<Hotspots>
+				<Hotspot Name="Forest Stoneray" X="271.2146" Y="16.01279" Z="27.87868" />
+				<Hotspot Name="Forest Krakjya" X="272.6234" Y="15.97483" Z="30.92454" />
+				<Hotspot Name="Forest Stoneray" X="278.8493" Y="15.7449" Z="31.63085" />
+				<Hotspot Name="Forest Stoneray" X="282.668" Y="15.505" Z="38.57169" />
+				<Hotspot Name="Forest Stoneray" X="274.0186" Y="15.51711" Z="41.41657" />
+			</Hotspots>
+		</GrindArea>
+
+	</GrindAreas>
+
+	<!--
+	
+		<GrindArea Name="">
+			<MinLevel>1</MinLevel>
+			<MaxLevel>50</MaxLevel>
+			<Mobs>
+				<Mob></Mob>
+				<Mob></Mob>
+				<Mob></Mob>
+				<Mob></Mob>
+				<Mob></Mob>
+				<Mob></Mob>
+			</Mobs>
+			<Hotspots>
+				
+				
+				
+				
+				
+			</Hotspots>
+		</GrindArea>    
+		
+	-->	
+
+	<Questing>
+	
+				<UserDialog Title="IMPORTANT" Message="Please keep an eye on the bot because dailies cannot be picked up without manually clicking accept.  Please click accept when each daily is picked up.  Dailies will complete automatically after this." />
+				
+				<!--Picking up dailies-->
+				<If Condition="((not HasQuest(0xE0004A2829872B16)) and (not IsQuestComplete(0xE0004A2829872B16)))"> <!--[DAILY] Confederacy-->
+					<MoveTo QuestId="1" X="344.952" Y="40.151" Z="14.63972" />
+					<Interact QuestId="1" Name="Mission Terminal" Radius="100" UseRange="50" IgnoreLOS="True" X="344.952" Y="40.151" Z="14.63972" />
+					<PickUpQuest QuestName="[DAILY] Confederacy" QuestId="0xE0004A2829872B16" GiverType="Placeable" UseRange="2" Radius="5" GiverName="Mission Terminal" X="344.952" Y="40.151" Z="14.63972" />
+				</If>
+				<If Condition="((not HasQuest(0xE0000FF1639BC9A1)) and (not IsQuestComplete(0xE0000FF1639BC9A1)))"> <!--[DAILY] The Devoted Ones-->
+				<PickUpQuest QuestName="[DAILY] The Devoted Ones" QuestId="0xE0000FF1639BC9A1" GiverType="Placeable" UseRange="2" Radius="5" GiverName="Mission Terminal" X="344.952" Y="40.151" Z="14.63972" />
+				</If>
+				<If Condition="((not HasQuest(0xE00029D46BB4EA8D)) and (not IsQuestComplete(0xE00029D46BB4EA8D)))"> <!--[WEEKLY] Spirit of Cooperation-->
+				<PickUpQuest QuestName="[WEEKLY] Spirit of Cooperation" QuestId="0xE00029D46BB4EA8D" GiverType="Placeable" UseRange="2" Radius="5" GiverName="Mission Terminal" X="344.952" Y="40.151" Z="14.63972" />
+				</If>
+				<!--<If Condition="((not HasQuest(0xE0007EC3F5A3CF10)) and (not IsQuestComplete(0xE0007EC3F5A3CF10)))">--> <!--[DAILY] Chopping Block-->
+					<!--<TalkTo QuestId="1" Name="Lord Ray'en" X="342.1049" Y="40.19028" Z="16.0273" />
+					<UserDialog Title="IMPORTANT" Message="Please click Accept and then click OK on this window to continue." /> 
+				</If>-->
+				<If Condition="((not HasQuest(0xE00074C9A6567C0F)) and (not IsQuestComplete(0xE00074C9A6567C0F)))"> <!--[DAILY] Pushback-->
+					<TalkTo QuestId="1" Name="Sergeant Sager" X="340.4663" Y="39.92714" Z="14.2955" />
+					<UserDialog Title="IMPORTANT" Message="Please click Accept and then click OK on this window to continue." />
+				</If>			
+				<If Condition="((not HasQuest(0xE0008015AD0AF9C8)) and (not IsQuestComplete(0xE0008015AD0AF9C8)))"> <!--[DAILY] Altars of History-->
+					<TalkTo QuestId="1" Name="Lieutenant Sabri" X="342.1897" Y="39.8093" Z="11.2921" />
+					<UserDialog Title="IMPORTANT" Message="Please click Accept and then click OK on this window to continue." />
+				</If>
+				<If Condition="((not HasQuest(0xE000AE0639786886)) and (not IsQuestComplete(0xE000AE0639786886)))"> <!--[DAILY] Training Regimen-->
+					<TalkTo QuestId="1" Name="Colonel Burr" X="338.6" Y="39.82841" Z="13.6" />
+					<UserDialog Title="IMPORTANT" Message="Please click Accept and then click OK on this window to continue." />
+				</If>
+				<!--Using Taxi-->
+				<If Condition="((HasQuest(0xE000AE0639786886)) and (not IsBranchStepComplete(0xE000AE0639786886, 1, 2)))">
+					<If Condition="(Me.Position.X &gt; 333) and (Me.Position.X &lt; 375) and (Me.Position.Y &gt; 39.6) and (Me.Position.Y &lt; 40.4) and (Me.Position.Z &gt; 6) and (Me.Position.Z &lt; 21)">
+						<If Condition="((Me.Class == CharacterClass.Consular) or (Me.Class == CharacterClass.Smuggler) or (Me.Class == CharacterClass.Knight) or (Me.Class == CharacterClass.Trooper))">		
+								<UseTransport TransporterName="Republic Taxi Droid" Type="Taxi" Option="Temple Ruins Speeder" 
+											X="335.1349" Y="39.74633" Z="14.4142"
+											ToX="139.7675" ToY="16.33642" ToZ="62.8517" />
+						</If>
+						<If Condition="((Me.Class == CharacterClass.Inquisitor) or (Me.Class == CharacterClass.Agent) or (Me.Class == CharacterClass.Warrior) or (Me.Class == CharacterClass.BountyHunter))">
+								<UseTransport TransporterName="Imperial Taxi Droid" Type="Taxi" Option="Temple Ruins Speeder" 
+											X="335.0037" Y="39.74633" Z="16.3005"
+											ToX="139.9597" ToY="16.33767" ToZ="49.7826" />
+						</If>
+					</If>					
+				</If>
+				<!--Picking up [DAILY] Pathfinding-->
+				<If Condition="((not HasQuest(0xE0009E9FAED31D0C)) and (not IsQuestComplete(0xE0009E9FAED31D0C)))">
+					<TalkTo QuestId="1" Name="Sergeant Geiz" X="168.0009" Y="15.3717" Z="72.0302" />
+					<UserDialog Title="IMPORTANT" Message="Please click Accept and then click OK on this window to continue." />
+				</If>
+				<!--Picking up [DAILY] Hunters Hunted-->
+				<If Condition="((not HasQuest(0xE000D0A60DF8B9CA)) and (not IsQuestComplete(0xE000D0A60DF8B9CA)))">
+					<MoveTo QuestId="1" X="188.2932" Y="11.73289" Z="75.43227" />
+					<PickUpQuest QuestName="[DAILY] Hunters Hunted" QuestId="0xE000D0A60DF8B9CA" Type="Placeable" GiverName="Datapad" X="188.2932" Y="11.73289" Z="75.43227" />				
+				</If>
+				<!--[DAILY] Hunters Hunted-->
+				<If Condition="((HasQuest(0xE000D0A60DF8B9CA)) and (not IsQuestComplete(0xE000D0A60DF8B9CA)))">
+					<If Condition="((HasQuest(0xE000D0A60DF8B9CA)) and (not IsBranchStepComplete(0xE000D0A60DF8B9CA, 1, 2)))">
+						<UseObject QuestId="0xE000D0A60DF8B9CA" Name="Massassi Cage" BranchId="1" StepId="2" Radius="20" WaitTime="5" >
+							<Hotspots>
+								<Hotspot Name="My Location" X="184.9591" Y="11.89403" Z="64.61042" />
+								<Hotspot Name="My Location" X="187.2794" Y="11.91338" Z="62.99447" />
+								<Hotspot Name="My Location" X="187.096" Y="12.23529" Z="58.42238" />
+								<Hotspot Name="My Location" X="185.5746" Y="12.21875" Z="55.224" />
+								<Hotspot Name="My Location" X="180.5598" Y="12.5272" Z="55.46642" />
+								<Hotspot Name="My Location" X="179.8751" Y="12.55471" Z="58.83692" />
+							</Hotspots>
+						</UseObject>
+					</If>	
+						<!--Massassi Retaliation (Bonus)-->
+						<If Condition="((HasQuest(0xE0007860BBC7EC44)) and (not IsBranchStepComplete(0xE0007860BBC7EC44, 1, 2)))">
+							<Grind GrindRef="Massassi Retaliation (Bonus)" While="(not IsBranchStepComplete(0xE0007860BBC7EC44, 1, 2))" />
+						</If>
+				</If>				
+				<!--[DAILY] Pathfinding-->
+				<If Condition="((HasQuest(0xE0009E9FAED31D0C)) and (not IsQuestComplete(0xE0009E9FAED31D0C)))">
+					<If Condition="((HasQuest(0xE0009E9FAED31D0C)) and (not IsBranchStepComplete(0xE0009E9FAED31D0C, 1, 2)))">
+						<Grind GrindRef="[DAILY] Pathfinding" While="(not IsBranchStepComplete(0xE0009E9FAED31D0C, 1, 2))" />
+					</If>
+						<!--Pathfinder's Duty (Bonus)-->
+						<If Condition="((HasQuest(0xE000A7295FD36AE3)) and (not IsBranchStepComplete(0xE000A7295FD36AE3, 1, 2)))">
+							<Grind GrindRef="Pathfinder's Duty (Bonus)" While="(not IsBranchStepComplete(0xE000A7295FD36AE3, 1, 2))" />
+						</If>
+					<If Condition="((HasQuest(0xE0009E9FAED31D0C)) and (not IsBranchStepComplete(0xE0009E9FAED31D0C, 1, 3)))">
+						<MoveTo QuestId="1" X="179.4209" Y="14.10019" Z="66.9114" />
+						<JumpTo 	QuestId="1" 
+								X="179.4209" Y="14.10019" Z="66.9114"
+								EndX="179.8941" EndY="14.19583" EndZ="67.06451"
+								JumpRotation="-107.9287" />
+						<UseObject QuestId="0xE0009E9FAED31D0C" Name="Stoneray Nest" BranchId="1" StepId="3" WaitTime="30" X="179.8941" Y="14.19583" Z="67.06451" />
+						<Grind GrindRef="Stoneray Matriarch" While="(not IsBranchStepComplete(0xE0009E9FAED31D0C, 1, 3))" />
+					</If>
+					<If Condition="((HasQuest(0xE0009E9FAED31D0C)) and (not IsBranchStepComplete(0xE0009E9FAED31D0C, 1, 4)))">
+						<TalkTo QuestId="0xE0009E9FAED31D0C" Name="Sergeant Geiz" X="168.0009" Y="15.3717" Z="72.0302" />
+						<CompleteQuest QuestName="[DAILY] Pathfinding" QuestId="0xE0009E9FAED31D0C" />
+					</If>
+				</If>			
+				<!--[DAILY] Altars of History-->
+				<If Condition="((HasQuest(0xE0008015AD0AF9C8)) and (not IsQuestComplete(0xE0008015AD0AF9C8)))">
+					<If Condition="((HasQuest(0xE0008015AD0AF9C8)) and (not IsBranchStepComplete(0xE0008015AD0AF9C8, 1, 2)))">					
+						<UseObject QuestId="0xE0008015AD0AF9C8" Name="Altar" BranchId="1" StepId="2" Radius="20" WaitTime="5" >
+							<Hotspots>
+								<Hotspot Name="My Location" X="154.7726" Y="15.78835" Z="71.36309" />
+								<Hotspot Name="My Location" X="157.6443" Y="15.74019" Z="68.89212" />
+								<Hotspot Name="My Location" X="157.5057" Y="15.74019" Z="63.8842" />
+								<Hotspot Name="My Location" X="162.8703" Y="15.751" Z="64.08852" />
+								<Hotspot Name="My Location" X="164.96" Y="15.74254" Z="61.38395" />
+								<Hotspot Name="My Location" X="157.8041" Y="15.74421" Z="50.43137" />
+								<Hotspot Name="My Location" X="154.8743" Y="15.74421" Z="49.77652" />
+								<Hotspot Name="My Location" X="162.3261" Y="15.7433" Z="44.17598" />
+								<Hotspot Name="My Location" X="165.0337" Y="15.7433" Z="42.46116" />
+							</Hotspots>
+						</UseObject>
+					</If>
+					<!--Massassi Onslaught (Bonus)-->
+					<If Condition="((HasQuest(0xE00058E22F6C125F)) and (not IsBranchStepComplete(0xE00058E22F6C125F, 1, 2)))">
+						<Grind GrindRef="Massassi Assault (Bonus)" While="(not IsBranchStepComplete(0xE00058E22F6C125F, 1, 2))" />
+					</If>
+					<If Condition="((HasQuest(0xE0008015AD0AF9C8)) and (not IsBranchStepComplete(0xE0008015AD0AF9C8, 1, 3)))">
+						<UseObject QuestId="0xE0008015AD0AF9C8" Name="Ancient Altar" BranchId="1" StepId="3" Radius="20" WaitTime="5" X="171.3558" Y="15.28842" Z="99.64437" />					
+					</If>				
+				</If>
+				<!--[DAILY] Training Regimen-->
+				<If Condition="((HasQuest(0xE000AE0639786886)) and (not IsQuestComplete(0xE000AE0639786886)))">
+					<If Condition="((HasQuest(0xE000AE0639786886)) and (not IsBranchStepComplete(0xE000AE0639786886, 1, 2)))">
+						<MoveTo QuestId="1" X="218.3342" Y="13.4933" Z="55.95345" />
+						<UseObject QuestId="0xE000AE0639786886" Name="Guard Console" BranchId="1" StepId="2" WaitTime="5" X="218.3342" Y="13.4933" Z="55.95345" />
+						<Grind GrindRef="[DAILY] Training Regimen" While="(not IsBranchStepComplete(0xE000AE0639786886, 1, 2))" />
+					</If>				
+				</If>
+				<!--[Daily] The Devoted Ones-->
+				<If Condition="((HasQuest(0xE0000FF1639BC9A1)) and (not IsQuestComplete(0xE0000FF1639BC9A1)))">			
+					<If Condition="((HasQuest(0xE0000FF1639BC9A1)) and (not IsBranchStepComplete(0xE0000FF1639BC9A1, 1, 2)))">
+							<!--Resource Denial (Bonus)-->
+							<If Condition="((not HasQuest(0xE000BA3712D35C8F)) and (not IsBranchStepComplete(0xE000BA3712D35C8F, 1, 2)))">
+								<UseObject QuestId="1" Name="Revanite Supply Cache" BranchId="1" StepId="2" Radius="20" WaitTime="5" X="243.1336" Y="13.71859" Z="81.50882" />
+							</If>
+							<While Condition="((HasQuest(0xE000BA3712D35C8F)) and (not IsBranchStepComplete(0xE000BA3712D35C8F, 1, 2)))">
+								<UseObject QuestId="0xE000BA3712D35C8F" Name="Revanite Supply Cache" BranchId="1" StepId="2" Radius="100" WaitTime="5" >
+									<Hotspots>
+										<Hotspot Name="My Location" X="238.8469" Y="12.89761" Z="91.00957" />
+										<Hotspot Name="My Location" X="229.2157" Y="13.77948" Z="90.34431" />
+										<Hotspot Name="My Location" X="217.2278" Y="13.71557" Z="85.48693" />
+										<Hotspot Name="My Location" X="225.3677" Y="14.23665" Z="76.705" />
+										<Hotspot Name="My Location" X="221.6944" Y="14.2424" Z="72.6745" />
+										<Hotspot Name="My Location" X="213.9102" Y="13.79811" Z="55.99953" />
+										<Hotspot Name="My Location" X="222.8752" Y="13.79491" Z="47.33835" />
+										<Hotspot Name="My Location" X="234.8622" Y="13.64453" Z="55.21698" />
+										<Hotspot Name="My Location" X="243.5762" Y="13.64303" Z="61.74664" />
+										<Hotspot Name="My Location" X="244.5475" Y="13.64657" Z="72.42418" />
+									</Hotspots>
+								</UseObject>
+							</While>
+						<If Condition="((HasQuest(0xE0000FF1639BC9A1)) and (not IsTaskComplete(0xE0000FF1639BC9A1, 2, 0)))">
+							<Grind GrindRef="Revanite Overseer" While="(not IsTaskComplete(0xE0000FF1639BC9A1, 2, 0))" />
+						</If>
+						<If Condition="((HasQuest(0xE0000FF1639BC9A1)) and (not IsTaskComplete(0xE0000FF1639BC9A1, 2, 1)))">
+							<Grind GrindRef="Revanite Loyalist" While="(not IsTaskComplete(0xE0000FF1639BC9A1, 2, 1))" />
+						</If>
+						<If Condition="((HasQuest(0xE0000FF1639BC9A1)) and (not IsTaskComplete(0xE0000FF1639BC9A1, 2, 2)))">
+							<Grind GrindRef="Revanite Followers" While="(not IsTaskComplete(0xE0000FF1639BC9A1, 2, 2))" />
+						</If>				
+					</If>
+					<If Condition="((HasQuest(0xE0000FF1639BC9A1)) and (not IsBranchStepComplete(0xE0000FF1639BC9A1, 1, 3)))">
+						<MoveTo QuestId="1" X="222.2924" Y="13.4959" Z="82.87275" />
+						<UseObject QuestId="0xE0000FF1639BC9A1" Name="Revanite Altar" BranchId="1" StepId="3" Radius="20" WaitTime="5" X="222.2924" Y="13.4959" Z="82.87275" />
+					</If>					
+				</If>
+				<!--[DAILY] Pushback-->
+				<If Condition="((HasQuest(0xE00074C9A6567C0F)) and (not IsQuestComplete(0xE00074C9A6567C0F)))">
+					<If Condition="((HasQuest(0xE00074C9A6567C0F)) and (not IsBranchStepComplete(0xE00074C9A6567C0F, 1, 2)))">
+						<Grind GrindRef="[DAILY] Pushback" While="(not IsBranchStepComplete(0xE00074C9A6567C0F, 1, 2))" />
+					</If>
+					<If Condition="((HasQuest(0xE00074C9A6567C0F)) and (not IsBranchStepComplete(0xE00074C9A6567C0F, 1, 3)))">
+						<UseObject QuestId="0xE00074C9A6567C0F" Name="Pile of Bones" BranchId="1" StepId="3" WaitTime="5" X="270.5913" Y="12.68453" Z="58.98549" />
+						<Grind GrindRef="Elder Lurker" While="(not IsBranchStepComplete(0xE00074C9A6567C0F, 1, 3))" />
+					</If>
+				</If>
+				<!--[Daily] Confederacy-->
+				<If Condition="((HasQuest(0xE0004A2829872B16)) and (not IsQuestComplete(0xE0004A2829872B16)))">
+					<If Condition="((HasQuest(0xE0004A2829872B16)) and (not IsBranchStepComplete(0xE0004A2829872B16, 1, 2)))">
+						<If Condition="((Me.Class == CharacterClass.Inquisitor) or (Me.Class == CharacterClass.Agent) or (Me.Class == CharacterClass.Warrior) or (Me.Class == CharacterClass.BountyHunter))">												
+							<If Condition="((HasQuest(0xE0004A2829872B16)) and (not IsTaskComplete(0xE0004A2829872B16, 2, 1)))">
+								<MoveTo QuestId="1" X="272.6001" Y="9.827632" Z="108.7865" />
+								<UseObject QuestId="0xE0004A2829872B16" Name="Perimeter Sensor Base" BranchId="1" StepId="2" TaskId="1" Radius="5" WaitTime="20" X="272.6001" Y="9.827632" Z="108.7865" />
+							</If>
+							<If Condition="((HasQuest(0xE0004A2829872B16)) and (not IsTaskComplete(0xE0004A2829872B16, 2, 2)))">
+								<MoveTo QuestId="1" X="272.5067" Y="9.917584" Z="86.18264" />
+								<UseObject QuestId="0xE0004A2829872B16" Name="Perimeter Sensor Base" BranchId="1" StepId="2" TaskId="2" Radius="5" WaitTime="20" X="272.5067" Y="9.917584" Z="86.18264" />
+							</If>
+							<If Condition="((HasQuest(0xE0004A2829872B16)) and (not IsTaskComplete(0xE0004A2829872B16, 2, 3)))">
+								<MoveTo QuestId="1" X="282.9852" Y="10.04113" Z="82.45888" />
+								<UseObject QuestId="0xE0004A2829872B16" Name="Perimeter Sensor Base" BranchId="1" StepId="2" TaskId="3" Radius="5" WaitTime="20" X="282.9852" Y="10.04113" Z="82.45888" />
+							</If>
+							<If Condition="((HasQuest(0xE0004A2829872B16)) and (not IsTaskComplete(0xE0004A2829872B16, 2, 4)))">
+								<MoveTo QuestId="1" X="282.0116" Y="15.56496" Z="39.88857" />
+								<UseObject QuestId="0xE0004A2829872B16" Name="Perimeter Sensor Base" BranchId="1" StepId="2" TaskId="4" Radius="5" WaitTime="20" X="282.0116" Y="15.56496" Z="39.88857" />
+							</If>
+							<If Condition="((HasQuest(0xE0004A2829872B16)) and (not IsTaskComplete(0xE0004A2829872B16, 2, 5)))">
+								<MoveTo QuestId="1" X="270.2979" Y="15.46444" Z="33.96815" />
+								<UseObject QuestId="0xE0004A2829872B16" Name="Perimeter Sensor Base" BranchId="1" StepId="2" TaskId="5" Radius="5" WaitTime="20" X="270.2979" Y="15.46444" Z="33.96815" />
+							</If>
+							<If Condition="((HasQuest(0xE0004A2829872B16)) and (not IsTaskComplete(0xE0004A2829872B16, 2, 6)))">
+								<MoveTo QuestId="1" X="267.7653" Y="15.44802" Z="22.21747" />
+								<UseObject QuestId="0xE0004A2829872B16" Name="Perimeter Sensor Base" BranchId="1" StepId="2" TaskId="6" Radius="5" WaitTime="20" X="267.7653" Y="15.44802" Z="22.21747" />
+							</If>
+						</If>
+						<If Condition="((Me.Class == CharacterClass.Consular) or (Me.Class == CharacterClass.Smuggler) or (Me.Class == CharacterClass.Knight) or (Me.Class == CharacterClass.Trooper))">
+							<If Condition="((HasQuest(0xE0004A2829872B16)) and (not IsTaskComplete(0xE0004A2829872B16, 2, 6)))">
+								<MoveTo QuestId="1" X="267.7653" Y="15.44802" Z="22.21747" />
+								<UseObject QuestId="0xE0004A2829872B16" Name="Perimeter Sensor Base" BranchId="1" StepId="2" TaskId="6" Radius="5" WaitTime="20" X="267.7653" Y="15.44802" Z="22.21747" />
+							</If>
+							<If Condition="((HasQuest(0xE0004A2829872B16)) and (not IsTaskComplete(0xE0004A2829872B16, 2, 5)))">
+								<MoveTo QuestId="1" X="270.2979" Y="15.46444" Z="33.96815" />
+								<UseObject QuestId="0xE0004A2829872B16" Name="Perimeter Sensor Base" BranchId="1" StepId="2" TaskId="5" Radius="5" WaitTime="20" X="270.2979" Y="15.46444" Z="33.96815" />
+							</If>
+							<If Condition="((HasQuest(0xE0004A2829872B16)) and (not IsTaskComplete(0xE0004A2829872B16, 2, 4)))">
+								<MoveTo QuestId="1" X="282.0116" Y="15.56496" Z="39.88857" />
+								<UseObject QuestId="0xE0004A2829872B16" Name="Perimeter Sensor Base" BranchId="1" StepId="2" TaskId="4" Radius="5" WaitTime="20" X="282.0116" Y="15.56496" Z="39.88857" />
+							</If>
+							<If Condition="((HasQuest(0xE0004A2829872B16)) and (not IsTaskComplete(0xE0004A2829872B16, 2, 3)))">
+								<MoveTo QuestId="1" X="282.9852" Y="10.04113" Z="82.45888" />
+								<UseObject QuestId="0xE0004A2829872B16" Name="Perimeter Sensor Base" BranchId="1" StepId="2" TaskId="3" Radius="5" WaitTime="20" X="282.9852" Y="10.04113" Z="82.45888" />
+							</If>
+							<If Condition="((HasQuest(0xE0004A2829872B16)) and (not IsTaskComplete(0xE0004A2829872B16, 2, 2)))">
+								<MoveTo QuestId="1" X="272.5067" Y="9.917584" Z="86.18264" />
+								<UseObject QuestId="0xE0004A2829872B16" Name="Perimeter Sensor Base" BranchId="1" StepId="2" TaskId="2" Radius="5" WaitTime="20" X="272.5067" Y="9.917584" Z="86.18264" />
+							</If>
+							<If Condition="((HasQuest(0xE0004A2829872B16)) and (not IsTaskComplete(0xE0004A2829872B16, 2, 1)))">
+								<MoveTo QuestId="1" X="272.6001" Y="9.827632" Z="108.7865" />
+								<UseObject QuestId="0xE0004A2829872B16" Name="Perimeter Sensor Base" BranchId="1" StepId="2" TaskId="1" Radius="5" WaitTime="20" X="272.6001" Y="9.827632" Z="108.7865" />
+							</If>
+						</If>
+					</If>								
+					<!--Jungle Savagery (Bonus)-->
+					<If Condition="((HasQuest(0xE000CFE8A8899E41)) and (not IsBranchStepComplete(0xE000CFE8A8899E41, 1, 2)))">
+						<Grind GrindRef="Savage Jungle (Bonus)" While="(not IsBranchStepComplete(0xE000CFE8A8899E41, 1, 2))" />
+					</If>					
+				</If>
+				<!--[DAILY] Chopping Block-->
+				<!--<If Condition="((HasQuest(0xE0007EC3F5A3CF10)) and (not IsQuestComplete(0xE0007EC3F5A3CF10)))">
+					<While Condition="((HasQuest(0xE0007EC3F5A3CF10)) and (not IsBranchStepComplete(0xE0007EC3F5A3CF10, 1, 2)))">
+						<MoveTo QuestId="1" X="223.6447" Y="13.64251" Z="92.85917" />
+						<UseItem QuestId="0xE0007EC3F5A3CF10" Item="Scanner" WaitTime="3500" Range="4" InCombat="False" BranchId="1" StepId="2" Radius="200" X="223.6447" Y="13.64251" Z="92.85917" />
+						<UserDialog Title="IMPORTANT" Message="Please use the scanner to complete mission '[DAILY] Chopping Block' and click OK on this window." />
+					</While>				
+				</If>-->
+				<!--Turning in Dailies-->
+				<If Condition="((HasQuest(0xE0004A2829872B16)) and (not IsBranchStepComplete(0xE0004A2829872B16, 1, 3)))">
+					<If Condition="(Me.Position.X &lt; 320)">	
+						<If Condition="((Me.Class == CharacterClass.Consular) or (Me.Class == CharacterClass.Smuggler) or (Me.Class == CharacterClass.Knight) or (Me.Class == CharacterClass.Trooper))">
+							<UseTransport TransporterName="Republic Forward Camp Taxi Droid" Type="Taxi" Option="Landing Area Speeder" 
+										X="286.0565" Y="10.29275" Z="98.6374"									
+										ToX="335.1349" ToY="39.74633" ToZ="14.4142" />
+						</If>
+						<If Condition="((Me.Class == CharacterClass.Inquisitor) or (Me.Class == CharacterClass.Agent) or (Me.Class == CharacterClass.Warrior) or (Me.Class == CharacterClass.BountyHunter))">
+						<UseTransport TransporterName="Imperial Forward Camp Taxi Droid" Type="Taxi" Option="Landing Area Speeder" 
+										X="289.0865" Y="15.43625" Z="22.644"									
+										ToX="335.0037" ToY="39.74633" ToZ="16.3005" />
+						</If>
+					</If>
+				</If>
+				<If Condition="((HasQuest(0xE00074C9A6567C0F)) and (not IsBranchStepComplete(0xE00074C9A6567C0F, 1, 4)))">
+					<TalkTo QuestId="0xE00074C9A6567C0F" Name="Sergeant Sager" X="340.4663" Y="39.92714" Z="14.2955" />
+					<CompleteQuest QuestName="[DAILY] Pushback" QuestId="0xE00074C9A6567C0F" />	
+				</If>
+				<If Condition="((HasQuest(0xE000AE0639786886)) and (not IsBranchStepComplete(0xE000AE0639786886, 1, 3)))">
+					<TalkTo QuestId="0xE000AE0639786886" Name="Colonel Burr" X="338.6" Y="39.82841" Z="13.6" />
+					<CompleteQuest QuestName="[DAILY] Training Regimen" QuestId="0xE000AE0639786886" />		
+				</If>
+				<If Condition="((HasQuest(0xE000D0A60DF8B9CA)) and (not IsBranchStepComplete(0xE000D0A60DF8B9CA, 1, 3)))">
+					<TalkTo QuestId="0xE000D0A60DF8B9CA" Name="Major Tso" X="339.9114" Y="39.84867" Z="13.2095" />
+					<CompleteQuest QuestName="[DAILY] Hunters Hunted" QuestId="0xE000D0A60DF8B9CA" />		
+				</If>	
+				<If Condition="((HasQuest(0xE0004A2829872B16)) and (not IsBranchStepComplete(0xE0004A2829872B16, 1, 3)))">
+					<MoveTo QuestId="1" X="344.952" Y="40.151" Z="14.63972" />
+					<UseObject QuestId="0xE0004A2829872B16" Name="Mission Dropbox" BranchId="1" StepId="3" WaitTime="4" UseRange="4" IgnoreLOS="True" X="344.952" Y="40.151" Z="14.63972" />
+						<CompleteQuest QuestName="[DAILY] Confederacy" QuestId="0xE0004A2829872B16"/>
+						<CompleteQuest QuestName="[Daily] The Devoted Ones" QuestId="0xE0000FF1639BC9A1"/>							
+				</If>
+				<If Condition="((HasQuest(0xE0008015AD0AF9C8)) and (not IsBranchStepComplete(0xE0008015AD0AF9C8, 1, 4)))">
+					<TalkTo QuestId="0xE0008015AD0AF9C8" Name="Lieutenant Sabri" X="342.1897" Y="39.8093" Z="11.2921" />
+					<CompleteQuest QuestName="[DAILY] Altars of History" QuestId="0xE0008015AD0AF9C8" />		
+				</If>
+				<If Condition="((HasQuest(0xE00029D46BB4EA8D)) and (IsBranchStepComplete(0xE00029D46BB4EA8D, 1, 2)))">
+					<MoveTo QuestId="1" X="344.952" Y="40.151" Z="14.63972" />
+					<UseObject QuestId="0xE00029D46BB4EA8D" Name="Mission Dropbox" WaitTime="4" UseRange="4" IgnoreLOS="True" X="344.952" Y="40.151" Z="14.63972" />
+						<CompleteQuest QuestName="[WEEKLY] Spirit of Cooperation" QuestId="0xE00029D46BB4EA8D"/>	
+				</If>
+				
+		
+	<!--Load Next Profile - CZ-198-->
+		<!--<LoadProfile Path="D:\Chan\Site\Edits\Day1\R - Light - CZ198.xml" />-->
+		
+		
+	</Questing>    
+
+</Profile>

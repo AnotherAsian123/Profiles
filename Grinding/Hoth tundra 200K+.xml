@@ -1,0 +1,43 @@
+<Profile xmlns="http://tempuri.org/ProfileSchema.xsd">
+	<Name>[E]Hoth 37-41 grind</Name>
+	
+		<Vendors>
+			<Hotspot Name="Officer Yerol" X="-344.5599" Y="7.100438" Z="90.78" />
+		</Vendors>
+
+		<GrindAreas>
+
+			<GrindArea Name="Clabburn Tundra">"
+				<MinLevel>37</MinLevel>
+				<MaxLevel>61</MaxLevel>
+				<Mobs>
+					<Mob>Anomid Engineer</Mob>
+					<Mob>White Maw Trapper</Mob>
+					<mob>White Maw Berserker</mob>
+				</Mobs>
+				<Hotspots>
+					<Hotspot Name="Anomid Engineer" X="-313.8336" Y="9.225399" Z="51.0624" />
+					<Hotspot Name="White Maw Trapper" X="-315.9184" Y="9.521458" Z="48.883" />
+					<Hotspot Name="White Maw Berserker" X="-311.7629" Y="10.63961" Z="42.3581" />
+					<Hotspot Name="White Maw Trapper" X="-312.4319" Y="9.51432" Z="45.3388" />
+					<Hotspot Name="White Maw Slayer" X="-315.102" Y="10.70114" Z="43.8662" />
+					<Hotspot Name="White Maw Trapper" X="-305.8183" Y="10.51843" Z="46.7066" />
+					<Hotspot Name="My Location" X="-311.2513" Y="9.172457" Z="51.85211" />
+					<Hotspot Name="White Maw Trapper" X="-311.5415" Y="9.017654" Z="55.36239" />
+					<Hotspot Name="Mounted White Maw Slayer" X="-314.0727" Y="9.202043" Z="53.5986" />
+					<Hotspot Name="White Maw Berserker" X="-305.838" Y="9.60146" Z="43.0152" />
+					<Hotspot Name="White Maw Slayer" X="-305.6396" Y="9.962069" Z="39.1604" />
+					<Hotspot Name="White Maw Trapper" X="-300.854" Y="10.29149" Z="40.39" />
+					<Hotspot Name="White Maw Trapper" X="-309.6982" Y="9.577421" Z="41.72643" />
+					<Hotspot Name="White Maw Trapper" X="-308.3391" Y="9.85724" Z="32.8084" />
+					<Hotspot Name="White Maw Trapper" X="-310.3512" Y="9.902534" Z="34.24637" />
+					<Hotspot Name="White Maw Trapper" X="-314.135" Y="10.26812" Z="30.4429" />
+					<Hotspot Name="White Maw Trapper" X="-296.9609" Y="10.81889" Z="33.59639" />
+				</Hotspots>
+				
+				
+			</GrindArea>
+
+		</GrindAreas>
+				<Grind GrindRef="Talz Commander" While="Me.Level &lt; 61" />
+</Profile>

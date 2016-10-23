@@ -1,0 +1,40 @@
+<Profile xmlns="http://tempuri.org/ProfileSchema.xsd">
+	<Name>Cold Cash</Name>
+	
+		<Vendors>
+			<Hotspot Name="Imperial Medical Droid" X="233.9838" Y="1.280145" Z="-19.3825" />
+		</Vendors>
+
+		<GrindAreas>
+
+			<GrindArea Name="The Starship Graveyard">"
+				<MinLevel>57</MinLevel>
+				<MaxLevel>61</MaxLevel>
+				<Mobs>
+					<Mob>Republic Assault Commander</Mob>
+					<Mob>Jedi Padawan</Mob>
+					<Mob>Jedi Master</Mob>
+				</Mobs>
+				<Hotspots>
+				<Hotspot Name="Republic Assault Commando" X="276.7634" Y="4.14702" Z="-79.6995" />
+				<Hotspot Name="Republic Assault Commando" X="278.8075" Y="5.454362" Z="-83.84641" />
+				<Hotspot Name="Jedi Master" X="276.5075" Y="5.960296" Z="-85.4512" />
+				<Hotspot Name="Republic Assault Commander" X="278.4186" Y="6.127037" Z="-87.37511" />
+				<Hotspot Name="Jedi Padawan" X="274.5233" Y="6.197157" Z="-89.2961" />
+				<Hotspot Name="Jedi Master" X="278.4599" Y="6.275168" Z="-91.33981" />
+				<Hotspot Name="Republic Assault Commander" X="269.4513" Y="6.56289" Z="-87.8971" />
+				<Hotspot Name="Republic Assault Commander" X="266.3434" Y="6.58811" Z="-88.1847" />
+				<Hotspot Name="Republic Assault Commander" X="266.2483" Y="6.444694" Z="-83.0223" />
+				<Hotspot Name="Republic Assault Commander" X="264.3779" Y="6.510284" Z="-85.2328" />
+				<Hotspot Name="Republic Assault Commander" X="259.8051" Y="6.51256" Z="-86.6112" />
+				<Hotspot Name="Republic Assault Commander" X="262.0938" Y="6.60157" Z="-88.67049" />
+				<Hotspot Name="Republic Assault Trooper" X="255.1763" Y="6.494309" Z="-84.8548" />
+				<Hotspot Name="Jedi Battlemaster" X="256.1398" Y="7.042669" Z="-91.9887" />
+				</Hotspots>
+				
+				
+			</GrindArea>
+
+		</GrindAreas>
+				<Grind GrindRef="Republic Assault Commander" While="Me.Level &lt; 61" />
+</Profile>

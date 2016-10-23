@@ -1,0 +1,277 @@
+<Profile xmlns="http://tempuri.org/ProfileSchema.xsd">
+  <Name>[E] Ilum-Dailies [Neo93]</Name>
+
+  <ForceAlignment Type="Dark" AutoSkip="true" />
+  
+	<Mailboxes>
+    <Hotspot Name="Shuttle" X="37.22869" Y="-0.4733714" Z="-43.97261" />
+	</Mailboxes>
+
+  <Taxis>
+    <Hotspot Name="Imperial Base Camp Speeder" X="37.7573" Y="-0.4667983" Z="-46.1142" />
+  </Taxis>
+
+  <!--
+  
+  	<Vendors>
+		
+	</Vendors>
+  	<Trainers>
+		
+	</Trainers>
+
+	
+	<BindPoints>
+		
+	</BindPoints>
+	
+	<AvoidMobs>
+		
+	</AvoidMobs>
+	-->
+	
+	<GrindAreas>
+    <GrindArea Name="JediRuins">
+      <MinLevel>50</MinLevel>
+      <MaxLevel>51</MaxLevel>
+      <Mobs>
+        <Mob>Republic Salvage Guard</Mob>
+        <Mob>Republic Salvage Droid</Mob>
+        <Mob>Republic Salvage Technician</Mob>
+        <Mob>Republic Salvage Hauler</Mob>
+      </Mobs>
+      <Hotspots>
+        <Hotspot Name="Spot1" X="17.7727" Y="9.904282" Z="-87.74286" />
+        <Hotspot Name="Spot2" X="12.56221" Y="10.10557" Z="-99.01443" />
+        <Hotspot Name="Spot3" X="7.56221" Y="10.10557" Z="-99.01443" />
+        <Hotspot Name="Spot4" X="25.56221" Y="10.10557" Z="-99.01443" />
+      </Hotspots>
+    </GrindArea>
+
+    <GrindArea Name="JediTemple">
+      <MinLevel>50</MinLevel>
+      <MaxLevel>51</MaxLevel>
+      <Mobs>
+        <Mob>Republic Siege Trooper</Mob>
+        <Mob>Republic Siege Droid</Mob>
+        <Mob>Republic Siege Captain</Mob>
+      </Mobs>
+      <Hotspots>
+        <Hotspot Name="Spot1" X="53.83095" Y="-1.274981" Z="-16.00664" />
+        <Hotspot Name="Spot2" X="54.89165" Y="-1.000688" Z="-18.08633" />
+        <Hotspot Name="Spot3" X="60.55016" Y="0.391048" Z="-20.62864" />
+      </Hotspots>
+    </GrindArea>
+
+    <GrindArea Name="OperationShatterstorm Bonus">
+      <MinLevel>50</MinLevel>
+      <MaxLevel>51</MaxLevel>
+      <Mobs>
+        <Mob>Talz Trooper</Mob>
+        <Mob>Talz RIfleman</Mob>
+        <Mob>Talz Vanguard</Mob>
+        <Mob>Talz Spotter</Mob>
+      </Mobs>
+      <Hotspots>
+        <Hotspot Name="Spot1" X="-33.45831" Y="-2.208159" Z="-57.18085" />
+        <Hotspot Name="Spot2" X="-18.17385" Y="-2.42477" Z="-56.52818" />
+        <Hotspot Name="Spot3" X="-16.2972" Y="-2.425607" Z="-64.85812" />
+        <Hotspot Name="Spot4" X="-18.50219" Y="-2.565669" Z="-68.82884" />
+      </Hotspots>
+    </GrindArea>
+
+    <GrindArea Name="FinalStage">
+      <MinLevel>50</MinLevel>
+      <MaxLevel>51</MaxLevel>
+      <Mobs>
+        <Mob>Commander Chalik</Mob>
+      </Mobs>
+      <Hotspots>
+        <Hotspot Name="My Location" X="-59.52146" Y="-2.004604" Z="-96.09458" />
+      </Hotspots>
+    </GrindArea>
+
+    <GrindArea Name="EasternIceShelf">
+      <MinLevel>50</MinLevel>
+      <MaxLevel>51</MaxLevel>
+      <Mobs>
+        <Mob>Republic Captain</Mob>
+        <Mob>Republic Specialist</Mob>
+        <Mob>Republic Guardsman</Mob>
+      </Mobs>
+      <Hotspots>
+        <Hotspot Name="My Location" X="-62.56022" Y="3.400126" Z="-2.4677" />
+        <Hotspot Name="My Location" X="-60.87091" Y="3.402972" Z="-0.3810429" />
+        <Hotspot Name="My Location" X="-61.43821" Y="3.415761" Z="3.234405" />
+      </Hotspots>
+    </GrindArea>
+  </GrindAreas>
+
+	<Questing>
+    <!-- [2]Heroic quest -->
+    <!--<If Condition="((not HasQuest(0xE000985A4A628E5D)) and (not IsQuestComplete(0xE000985A4A628E5D)))">
+      <PickUpQuest QuestName="[HEROIC 2+] Poisonous Strategy" QuestId="0xE000985A4A628E5D" GiverName="G-4T" X="43.2767" Y="-0.9342564" Z="-41.8161" />
+    </If>-->
+    <!-- Pickup: Operation Shatterstorm -->
+    <If Condition="(not HasQuest(0xE000153462527A30)) and (not IsQuestComplete(0xE000153462527A30))" >
+      <PickUpQuest QuestName="Operation Shatterstorm" QuestId="0xE000153462527A30" GiverName="Operative Che'nash" X="45.0541" Y="-0.9342563" Z="-39.5975" />
+    </If>
+    <!-- Pickup: Defend the Shipment -->
+    <If Condition="(not HasQuest(0xE000EF4CF39FE4D6)) and (not IsQuestComplete(0xE000EF4CF39FE4D6))" >
+      <PickUpQuest QuestName="Defend the Shipment" QuestId="0xE000EF4CF39FE4D6" GiverName="Major Dermian" X="50.9064" Y="-0.9466487" Z="-40.3699" />
+    </If>
+    <!-- Pickup: A Tightened Grip -->
+    <If Condition="(not HasQuest(0xE000020965C2808F)) and (not IsQuestComplete(0xE000020965C2808F))" >
+      <PickUpQuest QuestName="A Tightened Grip" QuestId="0xE000020965C2808F" GiverName="Lord Tetsu" X="54.1459" Y="-0.9571974" Z="-46.8363" />
+    </If>
+
+    <!-- [2]Heroic quest -->
+    <!--<If Condition="((HasQuest(0xE000985A4A628E5D)) and (not IsQuestComplete(0xE000985A4A628E5D)))">
+      <If Condition="((not IsBranchStepComplete(0xE000985A4A628E5D, 1, 2)">
+        <UseObject QuestId="0xE000985A4A628E5D" Name="Climate Controls" Radius="50" WaitTime="5" X="75.71469" Y="-1.168193" Z="-91.92595" />
+      </If>
+    </If> -->
+    
+    <!-- Do: Defend the Shipment -->
+    <If Condition="(HasQuest(0xE000EF4CF39FE4D6)) and (not IsQuestComplete(0xE000EF4CF39FE4D6))">
+      <If Condition="(HasQuest(0xE000EF4CF39FE4D6)) and (not IsBranchStepComplete(0xE000EF4CF39FE4D6, 1, 2))">
+        <UseObject QuestId="0xE000EF4CF39FE4D6" BranchId="1" StepId="2" Name="Imperial Crystal Shipment" Radius="400" WaitTime="5" BlacklistDuration="100" X="21.97549" Y="10.1639" Z="-92.55246" />
+        <UseObject QuestId="0xE000EF4CF39FE4D6" BranchId="1" StepId="2" Name="Imperial Crystal Shipment" Radius="400" WaitTime="5" BlacklistDuration="100" X="12.56221" Y="10.10557" Z="-99.01443" />
+      </If>
+      <If Condition="(HasQuest(0xE00010559362EBEA)) and (not IsBranchStepComplete(0xE00010559362EBEA, 1, 2)) and (not IsQuestComplete(0xE00010559362EBEA))">
+        <Grind GrindRef="JediRuins" While="(not IsQuestComplete(0xE00010559362EBEA))" />
+      </If>
+    </If>
+    
+    <!-- Do: A Tightened Grip -->
+    <If Condition="(HasQuest(0xE000020965C2808F)) and (not IsBranchStepComplete(0xE000020965C2808F, 1, 2)) and (not IsQuestComplete(0xE000020965C2808F))">
+      <Grind GrindRef="JediTemple" While="(not IsStepComplete(0xE000020965C2808F, 2))" />
+    </If>
+    <If Condition="(HasQuest(0xE000FBC692CF7882)) and (not IsQuestComplete(0xE000FBC692CF7882))" >
+      <UseObject QuestId="0xE000FBC692CF7882" Name="Missile Crate" Radius="200" WaitTime="5" >
+        <Hotspots>
+          <Hotspot Name="Spot1" X="53.83095" Y="-1.274981" Z="-16.00664" />
+          <Hotspot Name="Spot2" X="54.89165" Y="-1.000688" Z="-18.08633" />
+          <Hotspot Name="Spot3" X="60.55016" Y="0.391048" Z="-20.62864" />
+        </Hotspots>
+      </UseObject>
+    </If>
+
+    <!-- Taxi to Imperial Waystation Speeder -->
+    <If Condition="(IsQuestComplete(0xE000FBC692CF7882)) and (IsBranchStepComplete(0xE000020965C2808F, 1, 2)) and (IsBranchStepComplete(0xE000EF4CF39FE4D6, 1, 2)) and (not HasQuest(0xE000FA69AD35F78E))">
+      <UseTransport TransporterName="Imperial Base Camp Speeder" Type="Taxi" Option="Imperial Waystation Speeder"
+									X="37.7573" Y="-0.4667983" Z="-46.1142"
+									ToX="-29.6456" ToY="-1.300103" ToZ="-20.3487" />
+    </If>
+
+    <!-- Pickup: Sabotage -->
+    <If Condition="(IsQuestComplete(0xE000FBC692CF7882)) and (not HasQuest(0xE000FA69AD35F78E)) and (not IsQuestComplete(0xE000FA69AD35F78E))">
+      <PickUpQuest QuestName="Sabotage" QuestId="0xE000FA69AD35F78E" GiverName="Colonel Baramak" X="-29.947" Y="-1.318297" Z="-18.0296" />
+    </If>
+    
+    <!-- Pickup: Rightful Owner -->
+    <If Condition="(IsQuestComplete(0xE000FBC692CF7882)) and (not HasQuest(0xE000F8A570A22E52)) and (not IsQuestComplete(0xE000F8A570A22E52))">
+      <PickUpQuest QuestName="Rightful Owner" QuestId="0xE000F8A570A22E52" GiverName="Captain Barstead" X="-32.01784" Y="-1.319405" Z="-24.69217" />
+    </If>
+    
+    <!-- Do: Operation Shatterstorm -->
+    <If Condition="(HasQuest(0xE000153462527A30)) and (not IsQuestComplete(0xE000153462527A30)) and (not IsBranchStepComplete(0xE000153462527A30, 1, 2))">
+        <UseObject QuestId="0xE000153462527A30" BranchId="1" StepId="2" Name="Talz Communication Network Tower" IgnoreLOS="True" Radius="200" WaitTime="5" X="-18.09827" Y="-2.41514" Z="-56.46548" />
+    </If>
+
+    <!-- Stage 1-->
+    <If Condition="(HasQuest(0xE0004323A14FDAC5)) and (not IsQuestComplete(0xE0004323A14FDAC5)) and (not IsBranchStepComplete(0xE0004323A14FDAC5, 1, 2))" >
+      <Grind GrindRef="OperationShatterstorm Bonus" While="(not IsQuestComplete(0xE0004323A14FDAC5))" />
+    </If>
+
+    <!-- Stage 2-->
+    <If Condition="(HasQuest(0xE0004423A14FC488)) and (not IsQuestComplete(0xE0004423A14FC488)) and (not IsBranchStepComplete(0xE0004423A14FC488, 1, 4))"  >
+      <UseObject QuestId="0xE0004423A14FC488" BranchId="1" StepId="2" Name="Talz Tool Kit" Radius="200" WaitTime="5" IgnoreLOS="True" X="-18.50219" Y="-2.565669" Z="-68.82884" />
+    </If>
+
+    <!-- Stage 2-->
+    <If Condition="(HasQuest(0xE0004423A14FC488)) and (not IsQuestComplete(0xE0004423A14FC488)) and (not IsBranchStepComplete(0xE0004423A14FC488, 1, 5))"  >
+      <UseObject QuestId="0xE0004523A14FC65F" Name="Crane" Radius="200" WaitTime="5" IgnoreLOS="True" >
+        <Hotspots>
+          <Hotspot Name="Spot1" X="-18.7455" Y="-2.515589" Z="-70.17644" />
+          <Hotspot Name="Spot2" X="-14.11741" Y="-2.424301" Z="-64.89761" />
+          <Hotspot Name="Spot3" X="-24.01965" Y="-2.488076" Z="-63.12351" />
+        </Hotspots>
+      </UseObject>
+    </If>
+
+    <!-- Stage 3-->
+    <If Condition="(HasQuest(0xE0004523A14FC65F)) and (not IsQuestComplete(0xE0004523A14FC65F)) and (not IsBranchStepComplete(0xE0004523A14FC65F, 1, 4))"  >
+      <UseObject QuestId="0xE0004523A14FC65F" Name="Crane" Radius="200" WaitTime="5" IgnoreLOS="True" X="-44.80848" Y="-2.092848" Z="-64.08259"  />
+      <UseObject QuestId="0xE0004523A14FC65F" Name="Fuel Pipe" Radius="200" WaitTime="5" IgnoreLOS="True" X="-53.22566" Y="-1.92066" Z="-46.58213" />
+      <UseObject QuestId="0xE0004523A14FC65F" Name="Fuel Pipe" Radius="200" WaitTime="5" IgnoreLOS="True" X="-47.69396" Y="-1.982677" Z="-42.05692" />
+    </If>
+
+    <!-- Final Stage-->
+    <If Condition="(HasQuest(0xE000206EAB01DF02)) and (not IsQuestComplete(0xE000206EAB01DF02)) and (not IsBranchStepComplete(0xE000206EAB01DF02, 1, 4))"  >
+      <Grind GrindRef="FinalStage" While="(not IsQuestComplete(0xE000206EAB01DF02))" />
+    </If>
+
+    <!-- Do: Rightfull owner-->
+    <If Condition="(HasQuest(0xE000F8A570A22E52)) and (not IsQuestComplete(0xE000F8A570A22E52)) and (not IsBranchStepComplete(0xE000F8A570A22E52, 1, 2))">
+      <UseObject QuestId="0xE000F8A570A22E52" BranchId="1" StepId="2" Name="Republic Shipment Crate" Radius="200" WaitTime="5" IgnoreLOS="True" X="-79.92178" Y="4.781504" Z="7.039016"/>
+     </If>
+
+    <!-- Do: Sabotage -->
+    <If Condition="(HasQuest(0xE000FA69AD35F78E)) and (not IsQuestComplete(0xE000FA69AD35F78E)) and (not IsBranchStepComplete(0xE000FA69AD35F78E, 1, 2))">
+      <UseObject QuestId="0xE000FA69AD35F78E" BranchId="1" StepId="2" Name="Mining Equipment" Radius="200" WaitTime="5" IgnoreLOS="True" X="-77.83646" Y="4.935664" Z="3.951353" />
+    </If>
+    
+    <!-- Sabotage - Claim Jumping (Bonus) -->
+    <If Condition="(HasQuest(0xE000857B86AAA533)) and (not IsQuestComplete(0xE000857B86AAA533)) and (not IsBranchStepComplete(0xE000857B86AAA533, 1, 2))">
+      <Grind GrindRef="EasternIceShelf" While="(not IsBranchStepComplete(0xE000857B86AAA533, 1, 2))" />
+    </If>
+
+    <!--Complete: Sabotage -->
+    <If Condition="(HasQuest(0xE000FA69AD35F78E)) and (not IsQuestComplete(0xE000FA69AD35F78E)) and (IsQuestComplete(0xE000857B86AAA533))">
+      <TurnInQuest QuestName="Sabotage" QuestId="0xE000FA69AD35F78E" TurnInName="Colonel Baramak" X="-29.947" Y="-1.318297" Z="-18.0296" />
+      <CompleteQuest QuestName="Sabotage" QuestId="0xE000FA69AD35F78E" RewardIndex="1" />
+    </If>
+
+    <!--Complete: Rightful Owner -->
+    <If Condition="(HasQuest(0xE000F8A570A22E52)) and (not IsQuestComplete(0xE000F8A570A22E52))">
+      <TurnInQuest QuestName="Rightful Owner" QuestId="0xE000F8A570A22E52" TurnInName="Captain Barstead" X="-32.04483" Y="-1.319405" Z="-24.68489" />
+      <CompleteQuest QuestName="Rightful Owner" QuestId="0xE000F8A570A22E52" RewardIndex="1" />
+    </If>
+
+    <!-- Imperial Base Camp Speeder -->
+    <If Condition="(IsQuestComplete(0xE000F8A570A22E52)) and (IsQuestComplete(0xE000FA69AD35F78E)) and (not IsQuestComplete(0xE000EF4CF39FE4D6)) and (not IsQuestComplete(0xE000153462527A30)) and (not IsQuestComplete(0xE000020965C2808F))">
+      <UseTransport TransporterName="Imperial Waystation Speeder" Type="Taxi" Option="Imperial Base Camp Speeder"
+                    X="-29.6456" Y="-1.300103" Z="-20.3487"
+									  ToX="37.7573" ToY="-0.4667983" ToZ="-46.1142"/>	
+    </If>
+
+    <!-- Complete: Operation Shatterstorm -->
+    <If Condition="(HasQuest(0xE000153462527A30)) and (not IsQuestComplete(0xE000153462527A30))">
+      <TurnInQuest QuestName="Operation Shatterstorm" QuestId="0xE000153462527A30" TurnInName="Operative Che'nash" X="45.0541" Y="-0.9342563" Z="-39.5975" />
+      <CompleteQuest QuestName="Operation Shatterstorm" QuestId="0xE000153462527A30" RewardIndex="1" />
+    </If>
+
+    <!-- Complete: Defend the Shipment -->
+    <If Condition="(HasQuest(0xE000EF4CF39FE4D6)) and (not IsQuestComplete(0xE000EF4CF39FE4D6))">
+      <TurnInQuest QuestName="Defend the Shipment" QuestId="0xE000EF4CF39FE4D6" TurnInName="Major Dermian" X="50.9064" Y="-0.9466487" Z="-40.3699" />
+      <CompleteQuest QuestName="Defend the Shipment" QuestId="0xE000EF4CF39FE4D6" RewardIndex="1" />
+    </If>
+
+    <!-- Complete: Storm Chasing -->
+    <If Condition="(HasQuest(0xE0006914D454CD0A)) and (not IsQuestComplete(0xE0006914D454CD0A))">
+      <TurnInQuest QuestName="Storm Chasing" QuestId="0xE0006914D454CD0A" Type="Placeable" TurnInName="Mission Dropbox" X="51.33852" Y="-0.9878914" Z="-41.70245" />
+      <CompleteQuest QuestName="Storm Chasing" QuestId="0xE0006914D454CD0A" RewardIndex="1" />
+    </If>
+
+    <!-- Complete: A Tightened Grip -->
+    <If Condition="(HasQuest(0xE000020965C2808F)) and (not IsQuestComplete(0xE000020965C2808F))">
+      <TurnInQuest QuestName="A Tightened Grip" QuestId="0xE000020965C2808F" TurnInName="Lord Tetsu" X="54.1459" Y="-0.9571974" Z="-46.8363" />
+      <CompleteQuest QuestName="A Tightened Grip" QuestId="0xE000020965C2808F" RewardIndex="1" />
+    </If>
+
+    <UserDialog Title="End" Message="Post all issues/improvements here: http://www.thebuddyforum.com/buddy-wing-forum/buddy-wing-profiles/52440-e-ilum-dailies.html" />
+    
+  </Questing>    
+
+</Profile>

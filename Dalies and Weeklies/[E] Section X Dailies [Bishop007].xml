@@ -1,0 +1,226 @@
+<Profile xmlns="http://tempuri.org/ProfileSchema.xsd">
+  <Name>[E] Section X Dailies [Bishop007]</Name>
+  	
+	<Vendors>
+		<Hotspot Name="Imperial Medical Droid" X="62.8049" Y="15.55065" Z="-213.7552" /> <!-- Crag Outpost -->
+	</Vendors>
+
+	<GrindAreas>		
+		<GrindArea Name="Targeted Misfire">
+			<MinLevel>1</MinLevel>
+			<MaxLevel>100</MaxLevel>
+			<Mobs>
+				<Mob>Republic Bladesman</Mob>
+				<Mob>Republic Commando</Mob>
+				<Mob>Republic Marksman</Mob>
+				<Mob>Rebublic Assault Droid</Mob>	
+				<Mob>Jedi Protector</Mob>
+				<Mob>Jedi Special Operative</Mob>
+			</Mobs>
+			<Hotspots>
+				<Hotspot Name="Republic Commando" X="133.0104" Y="14.1057" Z="-193.4202" />
+				<Hotspot Name="Republic Commando" X="128.7851" Y="14.10744" Z="-184.8591" />
+				<Hotspot Name="Republic Bladesman" X="129.7536" Y="14.111" Z="-187.191" />
+				<Hotspot Name="Republic Assault Droid" X="125.4824" Y="14.10101" Z="-187.2363" />
+			</Hotspots>
+		</GrindArea>
+
+		<GrindArea Name="March of the Dread Guard">
+			<MinLevel>1</MinLevel>
+			<MaxLevel>100</MaxLevel>
+
+			<Mobs>
+				<Mob>Dread Host Scout</Mob>
+				<Mob>Dread Host Soilder</Mob>
+				<Mob>Dread Host Guardian</Mob>
+			</Mobs>
+			<Hotspots>
+				<Hotspot Name="Dread Host Scout" X="82.36227" Y="14.9928" Z="-167.5157" />
+				<Hotspot Name="Dread Host Soldier" X="84.67922" Y="15.66078" Z="-164.1139" />
+			</Hotspots>
+		</GrindArea>
+	</GrindAreas>			
+
+	<Questing>
+		<UserDialog Title="Hey!" Message="You need to start this profile while at Crag Outpost." />
+
+		<!-- Pick up all dailies at Crag Outpost -->
+
+		<If Condition="(Me.Position.X &gt; 55) and (Me.Position.X &lt; 70) and (Me.Position.Y &gt; 12) and (Me.Position.Y &lt; 18) and (Me.Position.Z &gt; -224) and (Me.Position.Z &lt; -209)">
+			<If Condition="((not HasQuest(0xE00065051B12D9B8)) and (not IsQuestComplete(0xE00065051B12D9B8)))">
+				<PickUpQuest QuestName="Targeted Misfire" QuestId="0xE00065051B12D9B8" GiverType="Placeable" UseRange="2" Radius="5" GiverName="Mission Terminal" X="63.7743" Y="15.34753" Z="-214.1845" />
+			</If>
+
+			<If Condition="((not HasQuest(0xE00058B9BB51079F)) and (not IsQuestComplete(0xE00058B9BB51079F)))">
+				<PickUpQuest QuestName="Data Raid" QuestId="0xE00058B9BB51079F" GiverType="Placeable" UseRange="2" Radius="5" GiverName="Mission Terminal" X="63.7743" Y="15.34753" Z="-214.1845" />
+			</If>
+
+			<If Condition="((not HasQuest(0xE0003DF54538C83F)) and (not IsQuestComplete(0xE0003DF54538C83F)))">
+				<PickUpQuest QuestName="March of the Dread Guard" QuestId="0xE0003DF54538C83F" GiverType="Placeable" UseRange="2" Radius="5" GiverName="Mission Terminal" X="63.7743" Y="15.34753" Z="-214.1845" />
+			</If>
+
+			<If Condition="((not HasQuest(0xE00061A2FB4BB40A)) and (not IsQuestComplete(0xE00061A2FB4BB40A)))">
+				<PickUpQuest QuestName="Hyperbiology" QuestId="0xE00061A2FB4BB40A" GiverType="Placeable" UseRange="2" Radius="5" GiverName="Mission Terminal" X="63.7743" Y="15.34753" Z="-214.1845" />
+			</If>
+		</If>
+
+		<!-- Elevator to [DAILY] areas -->
+		<If Condition="(Me.Position.X &gt; 55) and (Me.Position.X &lt; 70) and (Me.Position.Y &gt; 12) and (Me.Position.Y &lt; 18) and (Me.Position.Z &gt; -224) and (Me.Position.Z &lt; -209)">
+			<If Condition="((HasQuest(0xE0003DF54538C83F)) and (not IsQuestComplete(0xE0003DF54538C83F)))">
+				<UseTransport Type="Wonkavator" TransporterName="Elevator" Option="Rockfall Pass" X="66.06993" Y="15.50269" Z="-210.362" ToX="66.4316" ToY="13.94834" ToZ="-209.8596" />
+				<WaitTimer QuestId="1" WaitTime="2" />
+			</If>
+		</If>
+
+		<!-- [DAILY] Hyperbiology -->
+		<If Condition="((HasQuest(0xE00061A2FB4BB40A)) and (not IsQuestComplete(0xE00061A2FB4BB40A)))">
+			<If Condition="(not IsStepComplete(0xE00061A2FB4BB40A, 2))">
+				 <UseObject QuestId="0xE00061A2FB4BB40A" BranchId="1" StepId="2" TaskId="0" Name="Mutated Beast Egg" Radius="50" UseRange="4" WaitTime="5" IgnoreLOS="True" >
+			 		 <Hotspots>
+ 			 			<Hotspot Name="My Location" X="95.32558" Y="13.92012" Z="-211.9162" />
+ 						<Hotspot Name="My Location" X="99.60335" Y="13.59273" Z="-208.5054" />
+ 						<Hotspot Name="My Location" X="102.1912" Y="13.56349" Z="-206.5737" />
+ 						<Hotspot Name="My Location" X="87.65177" Y="13.48576" Z="-208.1367" />
+						<Hotspot Name="My Location" X="79.93594" Y="13.55926" Z="-208.9349" />
+			 		</Hotspots>
+				</UseObject>	
+			</If>
+
+			<If Condition="(not IsStepComplete(0xE00061A2FB4BB40A, 3))">
+				<MoveTo QuestId="0xE00061A2FB4BB40A" X="83.16822" Y="14.57662" Z="-225.511"/>
+				<UseObject QuestId="0xE00061A2FB4BB40A" Name="Science Station" BranchId="1" StepId="3" WaitTime="4" UseRange="4" IgnoreLOS="True"  X="83.16822" Y="14.57662" Z="-225.511" />
+			</If>
+			<If Condition="(not IsStepComplete(0xE00061A2FB4BB40A, 4))">
+				<MoveTo QuestId="0xE00061A2FB4BB40A" X="100.5098" Y="14.65739" Z="-224.4416" />
+				<UserDialog Title="Note From Bishop" Message="Click OK to close this window and then Click on the Hyperbeast and the Serum Injector to continue." />	
+			</If>
+		</If>
+		 
+		<!-- [DAILY] Targeted Misfire -->
+ 		<If Condition="((HasQuest(0xE00065051B12D9B8)) and (not IsQuestComplete(0xE00065051B12D9B8)))">
+			<If Condition="(not IsStepComplete(0xE00065051B12D9B8, 2))">
+				<MoveTo QuestId="0xE00065051B12D9B8" X="118.5974" Y="12.52846" Z="-194.2395" /> 
+				<Grind GrindRef="Targeted Misfire" While="(not IsStepComplete(0xE00065051B12D9B8, 2))"/>	
+			</If>
+
+			<If Condition="(not IsStepComplete(0xE00065051B12D9B8, 3))">
+				<MoveTo QuestId="0xE00065051B12D9B8" X="153.6567" Y="14.1051" Z="-173.0978" />
+				<UseObject QuestId="0xE00065051B12D9B8" Name="Rakata Device" BranchId="1" StepId="3" WaitTime="4" UseRange="4" IgnoreLOS="True" X="153.6567" Y="14.1051" Z="-173.0978" />
+			</If>
+
+
+			<If Condition="(not IsStepComplete(0xE00065051B12D9B8, 4))">
+				<MoveTo QuestId="0xE00065051B12D9B8"  X="150.2105" Y="14.12494" Z="-168.6184" />
+				<UseObject QuestId="0xE00065051B12D9B8" Name="Rakata Device" BranchId="1" StepId="4" WaitTime="4" UseRange="4" IgnoreLOS="True"  X="150.2105" Y="14.12494" Z="-168.6184" />
+			</If>
+
+			<If Condition="(not IsStepComplete(0xE00065051B12D9B8, 5))">
+				<MoveTo QuestId="0xE00065051B12D9B8" X="146.6842" Y="14.1051" Z="-173.1067" />
+				<UseObject QuestId="0xE00065051B12D9B8" Name="Rakata Device" BranchId="1" StepId="5" WaitTime="4" UseRange="4" IgnoreLOS="True" X="146.6842" Y="14.1051" Z="-173.1067" />
+			</If>
+
+			<If Condition="(not IsStepComplete(0xE00065051B12D9B8, 6))">
+				<MoveTo QuestId="0xE00065051B12D9B8" X="148.1448" Y="14.10007" Z="-172.701" />
+				<UserDialog Title="Note From Bishop" Message="Click OK to close this window and then Click on the Rakata War Droid and the Targeting Beacon to continue." />	
+			</If>
+
+89123456789123456789
+			<If Condition="(not IsStepComplete(0xE00065051B12D9B8, 7))">
+				<MoveTo QuestId="0xE00065051B12D9B8" X="150.2254" Y="14.1389" Z="-175.6741" />
+				<UseObject QuestId="0xE00065051B12D9B8" Name="Roof Controls" BranchId="1" StepId="7" WaitTime="4" UseRange="4" IgnoreLOS="True" X="150.2254" Y="14.1389" Z="-175.6741" />
+			</If>
+		</If>
+
+		<!-- [DAILY] Data Raid -->
+ 		<If Condition="((HasQuest(0xE00058B9BB51079F)) and (not IsQuestComplete(0xE00058B9BB51079F)))">
+			<If Condition="(not IsStepComplete(0xE00058B9BB51079F, 2))">
+				<UseObject QuestId="0xE00058B9BB51079F" BranchId="2" StepId="2" TaskId="0" Name="Energy Tube" Radius="50" UseRange="4" WaitTime="5" IgnoreLOS="True" >
+			 		<Hotspots>
+						<Hotspot Name="My Location" X="113.0256" Y="12.86008" Z="-147.6902" />
+						<Hotspot Name="My Location" X="113.203" Y="12.85859" Z="-146.9711" />
+						<Hotspot Name="My Location" X="114.7331" Y="12.84613" Z="-139.8002" />
+						<Hotspot Name="My Location" X="120.2449" Y="14.60569" Z="-154.8671" />								
+			 		</Hotspots>
+				</UseObject>	
+			</If>
+
+			<If Condition="(not IsStepComplete(0xE00058B9BB51079F, 3))">
+				<UseObject QuestId="0xE00058B9BB51079F" BranchId="2" StepId="3" TaskId="0" Name="Ancient Rakatan Pylon" Radius="50" UseRange="4" WaitTime="5" IgnoreLOS="True" >
+			 		<Hotspots>
+						<Hotspot Name="My Location" X="120.5396" Y="14.60558" Z="-153.9194" />
+						<Hotspot Name="My Location" X="109.331" Y="13.01479" Z="-152.4064" />								
+			 		</Hotspots>
+				</UseObject>
+				
+				<UseObject QuestId="0xE00058B9BB51079F" BranchId="2" StepId="3" TaskId="1" Name="Ancient Rakatan Pylon" Radius="50" UseRange="4" WaitTime="5" IgnoreLOS="True" >
+			 		<Hotspots>
+						<Hotspot Name="My Location" X="120.5396" Y="14.60558" Z="-153.9194" />
+						<Hotspot Name="My Location" X="109.331" Y="13.01479" Z="-152.4064" />							
+			 		</Hotspots>
+				</UseObject>
+			</If>
+		</If> 
+
+		<!-- [DAILY] March of the Dread Guard -->
+ 		<If Condition="((HasQuest(0xE0003DF54538C83F)) and (not IsQuestComplete(0xE0003DF54538C83F)))">
+			<If Condition="(not IsStepComplete(0xE0003DF54538C83F, 2))">
+				<MoveTo QuestId="0xE0003DF54538C83F"  X="83.83521" Y="15.68069" Z="-163.9164" />
+				<Grind GrindRef="March of the Dread Guard" While="(not IsStepComplete(0xE0003DF54538C83F, 2))"/>	
+			</If>
+			
+			<If Condition="(not IsStepComplete(0xE0003DF54538C83F, 3))">
+				<MoveTo QuestId="0xE0003DF54538C83F"  X="85.03827" Y="15.66078" Z="-165.4563" />
+				<UserDialog Title="Note From Bishop" Message="Click OK to close this window and then Click on the Prisoners and the Shackle Remote to continue." />	
+			</If>
+		</If>
+
+		<!-- Return to Crag Outpost -->
+ 		<If Condition="((HasQuest(0xE0003DF54538C83F)) and (not IsQuestComplete(0xE0003DF54538C83F)))">
+			<If Condition="(not IsStepComplete(0xE0003DF54538C83F, 4))">	
+				<UseTransport Type="Wonkavator" TransporterName="Elevator" Option="Crag Outpost" X="66.43535" Y="13.94777" Z="-210.0489" ToX="66.2384" ToY="15.50502" ToZ="-210.4385" />
+				<WaitTimer QuestId="1" WaitTime="2" />
+			</If>
+		</If>
+
+		<!-- Turn in missions -->
+		<If Condition="(Me.Position.X &gt; 55) and (Me.Position.X &lt; 70) and (Me.Position.Y &gt; 12) and (Me.Position.Y &lt; 18) and (Me.Position.Z &gt; -224) and (Me.Position.Z &lt; -209)">
+			<If Condition="((HasQuest(0xE00065051B12D9B8)) and (not IsStepComplete(0xE00065051B12D9B8, 9)))">
+				<UseObject QuestId="0xE00065051B12D9B8" Name="Mission Dropbox" BranchId="1" StepId="9" WaitTime="4" UseRange="4" IgnoreLOS="True" X="63.7743" Y="15.34753" Z="-214.1845" />
+			</If>
+
+			<If Condition="((HasQuest(0xE00058B9BB51079F)) and (not IsStepComplete(0xE00058B9BB51079F, 4)))">
+				<UseObject QuestId="0xE00058B9BB51079F" Name="Mission Dropbox" BranchId="2" StepId="4" WaitTime="4" UseRange="4" IgnoreLOS="True" X="63.7743" Y="15.34753" Z="-214.1845" />
+			</If>
+
+			<If Condition="((HasQuest(0xE0003DF54538C83F)) and (not IsStepComplete(0xE0003DF54538C83F, 4)))">
+				<UseObject QuestId="0xE0003DF54538C83F" Name="Mission Dropbox" BranchId="1" StepId="4" WaitTime="4" UseRange="4" IgnoreLOS="True" X="63.7743" Y="15.34753" Z="-214.1845" />
+			</If>
+
+			<If Condition="((HasQuest(0xE00061A2FB4BB40A)) and (not IsStepComplete(0xE00061A2FB4BB40A, 6)))">
+				<UseObject QuestId="0xE00061A2FB4BB40A" Name="Mission Dropbox" BranchId="1" StepId="6" WaitTime="4" UseRange="4" IgnoreLOS="True" X="63.7743" Y="15.34753" Z="-214.1845" />
+			</If>
+			
+			<If Condition="((IsQuestComplete(0xE00065051B12D9B8)))">
+				<CompleteQuest QuestName="Targeted Misfire" QuestId="0xE00065051B12D9B8" RewardIndex="1" />
+			</If>
+
+			<If Condition="((IsQuestComplete(0xE00058B9BB51079F)))">
+				<CompleteQuest QuestName="Data Raid" QuestId="0xE00058B9BB51079F" RewardIndex="1" />
+			</If>
+
+			<If Condition="((IsQuestComplete(0xE0003DF54538C83F)))">
+				<CompleteQuest QuestName="March of the Dread" QuestId="0xE0003DF54538C83F" RewardIndex="1" />
+			</If>
+
+			<If Condition="((IsQuestComplete(0xE00061A2FB4BB40A)))">
+				<CompleteQuest QuestName="Hyperbiology" QuestId="0xE00061A2FB4BB40A" RewardIndex="1" />
+			</If>
+
+		</If>		
+
+		<UserDialog Title="Note From Bishop007" Message="End of profile. Report any feedback to http://www.thebuddyforum.com/buddy-wing-forum/buddy-wing-profiles/129818-empire-republic-dailies.html" /> 
+		
+	</Questing>
+  
+</Profile>
+

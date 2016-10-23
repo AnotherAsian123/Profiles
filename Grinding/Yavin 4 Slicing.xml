@@ -1,0 +1,41 @@
+<Profile xmlns="http://tempuri.org/ProfileSchema.xsd">
+  <Name>Bobby-Zee Slicing</Name>
+
+	<Vendors>
+		<Hotspot Name="Republic Medical Droid" X="141.4218" Y="16.33642" Z="63.1452" />
+	</Vendors>
+  
+	<GrindAreas>
+
+		<GrindArea Name="Farm">
+			<MinLevel>1</MinLevel>
+			<MaxLevel>65</MaxLevel>
+			<Mobs>
+				<Mob>Massassi Conqueror</Mob>
+				<Mob>Massassi Brute</Mob>
+				<Mob>Lord Commander Inkari</Mob>
+				<Mob>Small Stoneray</Mob>
+			</Mobs>
+			<Hotspots>
+				<Hotspot Name="Massassi Conqueror" X="150.8207" Y="15.36495" Z="62.48193" />
+				<Hotspot Name="Massassi Brute" X="156.5421" Y="15.73998" Z="61.9051" />
+				<Hotspot Name="Massassi Brute" X="154.6236" Y="15.74019" Z="68.12755" />
+				<Hotspot Name="Massassi Brute" X="153.0718" Y="15.75071" Z="71.69083" />
+				<Hotspot Name="Massassi Conqueror" X="163.9909" Y="15.74254" Z="62.1626" />
+				<Hotspot Name="Lord Commander Inkari" X="165.6837" Y="15.14705" Z="56.7739" />
+				<Hotspot Name="Small Stoneray" X="168.371" Y="14.89013" Z="53.38141" />
+				<Hotspot Name="Massassi Brute" X="164.6092" Y="15.7433" Z="43.5719" />
+				<Hotspot Name="Massassi Brute" X="156.5063" Y="15.76588" Z="41.8898" />
+				<Hotspot Name="Massassi Conqueror" X="152.8506" Y="15.76114" Z="41.791" />
+				<Hotspot Name="Massassi Conqueror" X="148.8688" Y="15.74447" Z="43.56045" />
+				<Hotspot Name="Massassi Conqueror" X="148.8688" Y="15.74447" Z="43.56045" />
+				<Hotspot Name="Massassi Brute" X="154.0579" Y="15.74421" Z="51.87191" />
+			</Hotspots>
+							
+		</GrindArea>
+
+	</GrindAreas>
+
+	<Grind GrindRef="Farm" />			
+
+</Profile>

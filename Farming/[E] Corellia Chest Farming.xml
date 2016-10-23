@@ -1,0 +1,77 @@
+<Profile xmlns="http://tempuri.org/ProfileSchema.xsd">
+  <Name>[E] Corellia Chest Farming</Name>
+
+
+
+  <Taxis>
+    <Hotspot Name="Incorporation Islands Tram" X="-170.1036" Y="4.38175" Z="217.1191" /> <!-- Starter -->
+    <Hotspot Name="Business Sector Tram" X="303.7045" Y="22.38175" Z="-121.3812" /><!-- EMP - Business Sector-->
+    <Hotspot Name="Imperial War Camp Tram" X="-317.204" Y="-7.61825" Z="-153.1092" /><!-- EMP - Imperial War Camp-->
+	</Taxis>
+
+  <!--	
+    <Vendors>
+    EMP - Business Sector
+    <Hotspot Name="Quartermaster Morastu" X="302.6265" Y="20.11247" Z="-116.7127" />
+    
+    <Hotspot Name="Sergeant Calle" X="303.7735" Y="20.1139" Z="-125.9355" />
+    EMP - Business Sector
+    <Hotspot Name="Imperial Medical Droid" X="-308.5991" Y="-9.600938" Z="-159.5656" />
+  </Vendors>
+
+  <Mailboxes>
+    <Hotspot Name="Mailbox" X="302.5186" Y="20.28605" Z="-125.8536" />
+    EMP - Business Sector
+    <Hotspot Name="Mailbox" X="-320.8632" Y="-9.720145" Z="-153.0028" />
+    EMP - Imperial War Camp
+  </Mailboxes>
+	<BindPoints>
+		
+	</BindPoints>
+	
+	<Trainers>
+	</Trainers>
+  <AvoidMobs>
+    Damaged Security Droid
+  </AvoidMobs>
+  
+	-->
+  
+
+  
+  <Questing>
+    <If Condition="(BuddyTor.Client.RoomName == &quot;hub1_imp_spaceport_elv_01&quot;) or (BuddyTor.Client.RoomName == &quot;hub1_imp_spaceport_hangar_03_mini_lobby&quot;) or (BuddyTor.Client.RoomName == &quot;hub1_imp_spaceport_hangar1_2_landing&quot;)">
+      <UseTransport TransporterName="Elevator" Type="Wonkavator" Option="Coronet Spaceport"
+									X="-169.2995" Y="-23.50104" Z="183.7793"
+									ToX="-169.4285"  ToY="4.58566" ToZ="183.5007" />
+    </If>
+     <!--<UseTransport TransporterName="Incorporation Islands Tram" Option="Imperial War Camp Tram" X="-170.1036" Y="4.38175" Z="217.1191" ToX="-317.204" ToY="-7.61825" ToZ="-153.1092" /> -->
+
+    <UseObject QuestId="1" Name="Security Chest" Radius="500" BlacklistDuration="600" >
+      <Hotspots>
+        <Hotspot Name="Chest1" X="-323.1317" Y="-9.534631" Z="-176.1476" />
+        <Hotspot Name="Chest2" X="-332.3306" Y="-9.565129" Z="-175.0974" />
+        <Hotspot Name="Chest3" X="-333.3894" Y="-9.532699" Z="-174.3093" />
+        <Hotspot Name="Chest4" X="-336.4385" Y="-7.588428" Z="-202.4527" />
+        <!-- Elite-->
+        <Hotspot Name="Chest5" X="-356.4815" Y="-7.602635" Z="-179.6768" />
+        <!-- Mobs -->
+        <Hotspot Name="Chest6" X="-355.8912" Y="-9.565501" Z="-204.7186" />
+        <Hotspot Name="Chest7" X="-377.9867" Y="-7.537099" Z="-213.1523" />
+        <!-- Mobs -->
+        <Hotspot Name="Chest8" X="-265.3616" Y="-7.538199" Z="-203.3725" />
+        <Hotspot Name="Chest9" X="-271.4484" Y="-7.601647" Z="-212.675" />
+        <!-- not sure-->
+        <Hotspot Name="Chest10" X="-271.7456" Y="-8.565967" Z="-170.7187" />
+        <!-- well, I wouldnt go for that-->
+      </Hotspots>
+    </UseObject>
+    
+  </Questing>
+
+  </Profile>
+
+
+
+
+
